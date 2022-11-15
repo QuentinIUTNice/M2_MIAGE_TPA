@@ -1,0 +1,9 @@
+mbds\CO2OutputFormat.class
+mbds\Car$CarMap.class
+mbds\Car$CarReduce.class
+mbds\CarRecordWriter.class
+mbds\Car.class
+mbds\CarInputFormat.class
+mbds\CarWritable.class
+mbds\CarRecordReader.class
+mbds\AveragesOutputFormat.class
