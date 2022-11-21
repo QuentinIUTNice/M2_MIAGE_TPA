@@ -18,7 +18,7 @@ public class CarRecordWriter extends RecordWriter<Text, Text> {
 	}
 
 	public void write(Text k, Text count) throws IOException, InterruptedException {
-		out.writeBytes(k.toString()+"\t"+count+"\n");
+		out.writeBytes(k.toString()+","+count+"\n");
 	}
 
 	public void close(TaskAttemptContext arg0) throws IOException, InterruptedException {

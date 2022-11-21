@@ -44,8 +44,8 @@ public class Car {
 
         public void setup(Context context) {
             mos = new MultipleOutputs(context);
-            columns_co2 = new Text("Modele" + "\t" + "Bonus/Malus" + "\t" + "Rejet CO2 g/km"+ "\t" + "Cout energie");
-            columns_averages = new Text("Moyenne cout energie" + "\t" + "Moyenne rejet CO2" + "\t" + "Moyenne Bonus Malus");
+            columns_co2 = new Text("Modele,Bonus/Malus,Rejet CO2 g/km,Cout energie");
+            columns_averages = new Text("Moyenne cout energie,Moyenne rejet CO2,Moyenne Bonus Malus");
         }
 
         public void reduce(Text key, Iterable<CarWritable> values, Context context) throws IOException, InterruptedException {
@@ -74,7 +74,7 @@ public class Car {
                 int moyenne_cout_energie = total_cout_energie / count;
                 int moyenne_rejet = total_rejet / count;
                 int moyenne_bonus_malus = total_bonus_malus / count;
-                mos.write("averages", key, new Text(String.valueOf(moyenne_cout_energie) + "\t" + String.valueOf(moyenne_rejet) + "\t" + String.valueOf(moyenne_bonus_malus)), "averages_per_brand");
+                mos.write("averages", key, new Text(String.valueOf(moyenne_cout_energie) + "," + String.valueOf(moyenne_rejet) + "," + String.valueOf(moyenne_bonus_malus)), "averages_per_brand");
             }
         }
 

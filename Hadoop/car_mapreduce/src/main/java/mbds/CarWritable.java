@@ -85,6 +85,6 @@ class CarWritable implements Writable {
     }
 
     public String get_attributes() {
-        return modele + "\t" + bonus_malus + "\t" + rejet + "\t" + cout_energie;
+        return modele + "," + bonus_malus + "," + rejet + "," + cout_energie;
     }
 };
