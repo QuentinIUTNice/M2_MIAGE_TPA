@@ -11,10 +11,10 @@ catalogue <- subset(catalogue, select=-marque)
 catalogue <- subset(catalogue, select=-nom)
 
 # Creation des ensembles d'apprentissage et de test
-catalogue_EA <- catalogue[1:90,]
-catalogue_ET <- catalogue[91:270,]
+catalogue_A <- catalogue
+catalogue_T <- catalogue
 
-catalogue_ET <- subset(catalogue_ET, select=-categorie)
+catalogue_T <- subset(catalogue_T, select=-categorie)
 
 #-----------------------------------------#
 # APPRENTISSAGE ARBRE DE DECISION 'rpart' #
@@ -23,29 +23,29 @@ install.packages("rpart")
 library(rpart)
 
 # Arbres d'apprentissage
-treeCatalogue_EA <- rpart(categorie~., catalogue_EA)
+treeCatalogue <- rpart(categorie~., catalogue)
 
 #-------------------------------------------#
 # GENERATION DES PROBABILITES DE PREDICTION #
 #-------------------------------------------#
+catalogue_T <- catalogue
+
 # Generation de la classe prédite pour chaque exemple de test pour l'arbre 'tree1'
-test_treeCatalogue_ET <- predict(treeCatalogue_EA, catalogue_ET, type="class")
+test_treeCatalogue <- predict(treeCatalogue, catalogue, type="class")
 
 # Generation des probabilites pour chaque exemple de test pour l'arbre 'tree1'
-prob_treeCatalogue_ET <- data.frame(predict(treeCatalogue_EA, catalogue_ET, type="prob"))
+prob_treeCatalogue <- data.frame(predict(treeCatalogue, catalogue_T, type="prob"))
 
 #---------------------------#
 # CALCUL DES TAUX DE SUCCES #
 #---------------------------#
-catalogue_ET <- catalogue[91:270,]
-
-catalogue_ET$categorie_predite <- (colnames(prob_treeCatalogue_ET)[max.col(prob_treeCatalogue_ET)])
+catalogue_T$categorie_predite <- (colnames(prob_treeCatalogue)[max.col(prob_treeCatalogue)])
 
 # Affichage de la classe reelle et des classes predites 
-View(catalogue_ET)
+View(catalogue_T)
 
 # Calcul du taux de succes
-taux_succes <- nrow(catalogue_ET[catalogue_ET$categorie==catalogue_ET$categorie_predite,])/nrow(catalogue_ET)
+taux_succes <- nrow(catalogue_T[catalogue_T$categorie==catalogue_T$categorie_predite,])/nrow(catalogue_T)
 taux_succes
 
 #----------------------------------------#
