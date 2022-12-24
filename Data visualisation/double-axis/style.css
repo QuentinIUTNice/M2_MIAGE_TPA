@@ -1,0 +1,32 @@
+body, html{
+    background-color: #181E24 !important;
+    padding-top: 10px;
+    font-family: "Montserrat",sans-serif;
+  }
+  
+  .wrapper{
+    width:70%;
+    display:block;
+    overflow:hidden;
+    margin:0 auto;
+    padding: 20px;
+    background: rgba(255, 26, 104, 0.2);
+    border-radius:4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border: solid 3px rgba(255, 26, 104, 1);
+  }
+  
+  canvas{
+    background:#fff;
+    height:400px;
+  }
+  
+  h1{
+    font-family: Roboto;
+    color: #fff;
+    margin-top:50px;
+    font-weight:200;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+  }
