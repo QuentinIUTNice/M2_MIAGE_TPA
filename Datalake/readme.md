@@ -6,30 +6,46 @@ Au sein de ce datalake, nous avons opté pour trois sources données completemen
 - **HDFS**: contient les fichiers **co2** et **marketing**
 
 Rgerouper ces différentes données réparties sur différents SGBD en un seul est le role de **Hive**. Nous avons ainsi créer des tables externes qui pointent respectivement sur chaque table en fonction de son emplacement( sur Oracle NoSQL avec KV, sur Mongo ou sur HDFS). 
+
 Pour ce faire nous avons procédé comme suit:
+
 # Data source_1: Oracle NoSQL Database (KVStore)
 
 Pour placer les données clients et immatriculations dans le serveur Oracle NOSQL, nous avons developpé le programme java se trouvant dans le fichier Tpa.java présent dans ce dossier. Pour l'utiliser, veuillez suivre les instructions suivantes:
 **Launch vagrant:**
+
  ``` vagrant up ```
+
 **Connect to the VM:**
+
   ``` vagrant ssh ```
-**Access to vagrant directory:** 	
+
+**Access to vagrant directory:**
+
   ``` cd /vagrant ```
+
 **Start kv:** 
+
   ``` nohup java -Xmx64m -Xms64m -jar $KVHOME/lib/kvstore.jar kvlite -secure-config disable -root $KVROOT & ```
+
 **Ping kv:**
+
   ``` java -Xmx64m -Xms64m -jar $KVHOME/lib/kvstore.jar ping -host localhost -port 5000 ```
 
 
 **Compile the file Tpa.java:**
+
   ``` javac -g -cp $KVHOME/lib/kvclient.jar:. Tpa.java ```
+
 **Execute the file Tpa.java:**
+
  ``` java -Xmx256m -Xms256m  -cp $KVHOME/lib/kvclient.jar:. Tpa ```
 
 
 **Check if the tables have been created with success:**
+
  ``` java -Xmx64m -Xms64m -jar $KVHOME/lib/sql.jar -helper-hosts localhost:5000 -store kvstore ```
+
  ``` select * from co2; ```
 
  ``` select * from clients; ```
@@ -41,9 +57,17 @@ Pour placer les données clients et immatriculations dans le serveur Oracle NOSQ
  ``` select * from marketing; ```
 
  **Start hive:**
- ```nohup hive --service metastore > /dev/null &```
- ```nohup hiveserver2 > /dev/null &```
- ```beeline -u jdbc:hive2://localhost:10000 vagrant```
+ ```bash 
+ nohup hive --service metastore > /dev/null &
+ ```
+
+```bash 
+nohup hiveserver2 > /dev/null &
+```
+
+ ```bash 
+ beeline -u jdbc:hive2://localhost:10000 vagrant
+ ```
 **Query KVStore from Hive**
 
 **_External table CLIENT_**
@@ -93,15 +117,17 @@ TBLPROPERTIES (
 ```
  **Check the data on Hive:**
 
-  ```SELECT * FROM CLIENT_EXT;```
- ``` SELECT * FROM IMMATRICULATION_EXT;```
+  ```bash
+  SELECT * FROM CLIENT_EXT;
+  SELECT * FROM IMMATRICULATION_EXT;```
 
 # Data source_2: Mongo
 **Importing the data into mongo**
 
-```vagrant ssh```
-```cd /vagrant```
- ```mongoimport -d mbds_22 -c catalogue --type csv --file Catalogue.csv --headerline```
+```bash
+vagrant ssh
+cd /vagrant
+ mongoimport -d mbds_22 -c catalogue --type csv --file Catalogue.csv --headerline```
 
  **Check if the data has been imported successfully**
  ```bash
@@ -114,17 +140,21 @@ db.catalogue.find()
 ```
 **Connect to hive:**
 
-```start-dfs.sh```
-```start-yarn.sh```
-```nohup hive --service metastore > /dev/null &```
-```nohup hiveserver2 > /dev/null &```
-```beeline -u jdbc:hive2://localhost:10000 vagrant```
+```bash
+start-dfs.sh
+start-yarn.sh
+nohup hive --service metastore > /dev/null &
+nohup hiveserver2 > /dev/null &
+beeline -u jdbc:hive2://localhost:10000 vagrant
+```
 
 **In case of error due to MongoStorageHandler:** 
 
-```ADD JAR /usr/local/mongo-hadoop/core/build/libs/mongo-hadoop-core-2.0.2.jar;```
-```ADD JAR /usr/local/hive/lib/mongo-java-driver-3.2.1.jar;```
-```ADD JAR /usr/local/mongo-hadoop/hive/build/libs/mongo-hadoop-hive-2.0.2.jar;```
+```bash 
+ADD JAR /usr/local/mongo-hadoop/core/build/libs/mongo-hadoop-core-2.0.2.jar;
+ADD JAR /usr/local/hive/lib/mongo-java-driver-3.2.1.jar;
+ADD JAR /usr/local/mongo-hadoop/hive/build/libs/mongo-hadoop-hive-2.0.2.jar;
+```
 
 **Create external table: Query Mongo from Hive**
 
@@ -153,23 +183,28 @@ TBLPROPERTIES('mongo.uri'='mongodb://localhost:27017/mbds_22.catalogue');
 
 # Data source_3: HDFS
 **Start hadoop:**
-```start-dfs.sh```
-```start-yarn.sh```
+```bash
+start-dfs.sh
+start-yarn.sh
+```
 
 **Put file Marketing.csv on hadoop et check it:**
-```hadoop fs -put Marketing.csv /secrets```
-```hadoop fs -put co2.csv /secrets```
-```hadoop fs -ls /secrets```
-
-
+```bash 
+hadoop fs -put Marketing.csv /secrets
+hadoop fs -put co2.csv /secrets
+hadoop fs -ls /secrets
+```
 
 
 **Start hive:**
-```nohup hive --service metastore > /dev/null &```
-```nohup hiveserver2 > /dev/null &```
-```beeline -u jdbc:hive2://localhost:10000 vagrant```
+```bash
+nohup hive --service metastore > /dev/null &
+nohup hiveserver2 > /dev/null &
+beeline -u jdbc:hive2://localhost:10000 vagrant
+```
 **Create external table: Query HDFS from Hive**
 **_Marketing_**
+
 ```bash
 CREATE EXTERNAL TABLE  IF NOT EXISTS MARKETING_EXTERNE_H (
 AGE int,
@@ -188,6 +223,7 @@ LOCATION '/secrets';
 ```LOAD DATA INPATH '/secrets/Marketing.csv' INTO TABLE MARKETING_EXTERNE_H;```
 
 **Check on the creation of the table**
+
 ```SELECT * FROM MARKETING_EXTERNE_H;```
 
 
@@ -212,6 +248,7 @@ LOCATION '/secrets';
 
 
 **Check on the creation of the table**
+
 ```SELECT * FROM CO2_EXTERNE_H;```
 
 
