@@ -15,7 +15,6 @@ library(nnet)
 #-------------------------#
 clients_immatriculations <- read.csv(dec = ".", file = "Clients_immatriculations.csv", header = TRUE, sep = ",", stringsAsFactors = FALSE)
 
-clients_immatriculations <- subset(clients_immatriculations, select=-X2eme.voiture)
 clients_immatriculations <- subset(clients_immatriculations, select=-immatriculation)
 clients_immatriculations <- subset(clients_immatriculations, select=-marque)
 clients_immatriculations <- subset(clients_immatriculations, select=-nom)
