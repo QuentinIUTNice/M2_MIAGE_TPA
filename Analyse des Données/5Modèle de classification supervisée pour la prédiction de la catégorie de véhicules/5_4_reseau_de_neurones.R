@@ -38,49 +38,52 @@ test <- clients_immatriculations[ind==2,]
 #--------------------#
 # Réseau de neurones #
 #--------------------#
-# Definition de la fonction d'apprentissage, test et evaluation par courbe ROC
-test_nnet <- function(arg1, arg2, arg3){
-  # Redirection de l'affichage des messages intermédiaires vers un fichier texte
-  sink('output.txt', append=T)
-  
-  # Apprentissage du classifeur 
-  nn <- nnet(as.factor(categorie)~., train, size = arg1, decay = arg2, maxit=arg3)
-  
-  # Réautoriser l'affichage des messages intermédiaires
-  sink(file = NULL)
-  
-  # Test du classifeur : classe predite
-  nn_class <- predict(nn, test, type="class")
-  
-  # Matrice de confusion
-  print(table(test$categorie, nn_class))
-  
-  # Test des classifeurs : probabilites pour chaque prediction
-  nn_prob <- predict(nn, test, type="raw")
-  
-  # Return ans affichage sur la console
-  invisible()
-}
-
-#-------------------------------------------------#
-# APPRENTISSAGE DES CONFIGURATIONS ALGORITHMIQUES #
-#-------------------------------------------------#
-# Réseaux de neurones nnet()
-test_nnet(50, 0.01, 100)
+nn <- nnet(as.factor(categorie)~., train, size = 50, decay = 0.01, maxit=100)
+nn_class <- predict(nn, test, type="class")
+print(table(test$categorie, nn_class))
+nn_prob <- predict(nn, test, type="raw")
 test$categorie_predite_1 <- (colnames(nn_prob)[max.col(nn_prob)])
-test_nnet(50, 0.01, 300)
+
+nn <- nnet(as.factor(categorie)~., train, size = 50, decay = 0.01, maxit=300)
+nn_class <- predict(nn, test, type="class")
+print(table(test$categorie, nn_class))
+nn_prob <- predict(nn, test, type="raw")
 test$categorie_predite_2 <- (colnames(nn_prob)[max.col(nn_prob)])
-test_nnet(25, 0.01, 100)
+
+nn <- nnet(as.factor(categorie)~., train, size = 25, decay = 0.01, maxit=100)
+nn_class <- predict(nn, test, type="class")
+print(table(test$categorie, nn_class))
+nn_prob <- predict(nn, test, type="raw")
 test$categorie_predite_3 <- (colnames(nn_prob)[max.col(nn_prob)])
-test_nnet(25, 0.01, 300)
+
+nn <- nnet(as.factor(categorie)~., train, size = 25, decay = 0.01, maxit=300)
+nn_class <- predict(nn, test, type="class")
+print(table(test$categorie, nn_class))
+nn_prob <- predict(nn, test, type="raw")
 test$categorie_predite_4 <- (colnames(nn_prob)[max.col(nn_prob)])
-test_nnet(50, 0.001, 100)
+
+nn <- nnet(as.factor(categorie)~., train, size = 50, decay = 0.001, maxit=100)
+nn_class <- predict(nn, test, type="class")
+print(table(test$categorie, nn_class))
+nn_prob <- predict(nn, test, type="raw")
 test$categorie_predite_5 <- (colnames(nn_prob)[max.col(nn_prob)])
-test_nnet(50, 0.001, 300)
+
+nn <- nnet(as.factor(categorie)~., train, size = 50, decay = 0.001, maxit=300)
+nn_class <- predict(nn, test, type="class")
+print(table(test$categorie, nn_class))
+nn_prob <- predict(nn, test, type="raw")
 test$categorie_predite_6 <- (colnames(nn_prob)[max.col(nn_prob)])
-test_nnet(25, 0.001, 100)
+
+nn <- nnet(as.factor(categorie)~., train, size = 25, decay = 0.001, maxit=100)
+nn_class <- predict(nn, test, type="class")
+print(table(test$categorie, nn_class))
+nn_prob <- predict(nn, test, type="raw")
 test$categorie_predite_7 <- (colnames(nn_prob)[max.col(nn_prob)])
-test_nnet(25, 0.001, 300)
+
+nn <- nnet(as.factor(categorie)~., train, size = 25, decay = 0.001, maxit=300)
+nn_class <- predict(nn, test, type="class")
+print(table(test$categorie, nn_class))
+nn_prob <- predict(nn, test, type="raw")
 test$categorie_predite_8 <- (colnames(nn_prob)[max.col(nn_prob)])
 
 #---------------------------#
