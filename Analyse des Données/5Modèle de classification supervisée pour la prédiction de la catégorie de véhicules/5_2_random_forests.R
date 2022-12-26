@@ -3,10 +3,12 @@
 #--------------------------------------------#
 # INSTALLATION/MAJ DES LIRAIRIES NECESSAIRES #
 #--------------------------------------------#
+install.packages("randomForest")
 
 #--------------------------------------#
 # ACTIVATION DES LIRAIRIES NECESSAIRES #
 #--------------------------------------#
+library(randomForest)
 
 #-------------------------#
 # PREPARATION DES DONNEES #
