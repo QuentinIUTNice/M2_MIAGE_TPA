@@ -1,6 +1,7 @@
  
 # ARCHITECTURE OF OUR PROJET
-Au sein de ce datalake, nous avons opté pour trois sources données completement séparées notamment:
+ Afin de traite ces données de quantité massive, nons avons choisi de les répartir sur ces trois sources données complétement indépendantes notamment:
+ 
 - **Oracle NoSQL**:contient les tables **clients** et **immatriculations**
 - **MongoDB**: contient la table **catalogue**
 - **HDFS**: contient les fichiers **co2** et **marketing**
@@ -12,6 +13,7 @@ Pour ce faire nous avons procédé comme suit:
 # Data source_1: Oracle NoSQL Database (KVStore)
 
 Pour placer les données clients et immatriculations dans le serveur Oracle NOSQL, nous avons developpé le programme java se trouvant dans le fichier Tpa.java présent dans ce dossier. Pour l'utiliser, veuillez suivre les instructions suivantes:
+
 **Launch vagrant:**
 
  ``` vagrant up ```
