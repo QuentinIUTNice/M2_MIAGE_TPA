@@ -72,6 +72,6 @@ immatriculations$categorie <- (colnames(prob_treeCatalogue)[max.col(prob_treeCat
 View(immatriculations)
 
 # Enregistrement du fichier de resultats au format csv
-write.table(immatriculations, file='Immatriculations_predites.csv', sep=",", dec=".", row.names = F)
+write.table(immatriculations, file="Immatriculations_predites.csv", sep=",", dec=".", row.names = F)
 
 immatriculations_predites <- read.csv(dec = ".", file = "Immatriculations_predites.csv", header = TRUE, sep = ",", stringsAsFactors = FALSE)
