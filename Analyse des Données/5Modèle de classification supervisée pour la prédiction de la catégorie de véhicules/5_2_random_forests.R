@@ -3,57 +3,70 @@
 #--------------------------------------------#
 # INSTALLATION/MAJ DES LIRAIRIES NECESSAIRES #
 #--------------------------------------------#
+install.packages("caret")
 install.packages("randomForest")
+
 
 #--------------------------------------#
 # ACTIVATION DES LIRAIRIES NECESSAIRES #
 #--------------------------------------#
+library(caret)
 library(randomForest)
 
 #-------------------------#
 # PREPARATION DES DONNEES #
 #-------------------------#
-clients_immatriculations <- read.csv(dec = ".", file = "Clients_immatriculations.csv", header = TRUE, sep = ",", stringsAsFactors = FALSE)
+clientsImmatriculations <- read.csv(
+    dec = ".",
+    file = "ClientsImmatriculations.csv",
+    header = TRUE,
+    sep = ",",
+    stringsAsFactors = FALSE,
+    fileEncoding = "UTF-8"
+)
 
-clients_immatriculations <- subset(clients_immatriculations, select=-immatriculation)
-clients_immatriculations <- subset(clients_immatriculations, select=-marque)
-clients_immatriculations <- subset(clients_immatriculations, select=-nom)
-clients_immatriculations <- subset(clients_immatriculations, select=-puissance)
-clients_immatriculations <- subset(clients_immatriculations, select=-longueur)
-clients_immatriculations <- subset(clients_immatriculations, select=-nbPlaces)
-clients_immatriculations <- subset(clients_immatriculations, select=-nbPortes)
-clients_immatriculations <- subset(clients_immatriculations, select=-couleur)
-clients_immatriculations <- subset(clients_immatriculations, select=-occasion)
-clients_immatriculations <- subset(clients_immatriculations, select=-prix)
+# Suppression des colonnes liées à la voiture (autre que la catégorie)
+sauvegardeClientsImmatriculations <- clientsImmatriculations
+
+clientsImmatriculations <- subset(clientsImmatriculations, select = -immatriculation)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -marque)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -nom)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -puissance)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -longueur)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -nbPlaces)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -nbPortes)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -couleur)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -occasion)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -prix)
 
 #----------------#
 # DATA PARTITION #
 # -------------- #
 set.seed(222)
-ind <- sample(2, nrow(clients_immatriculations), replace = TRUE, prob = c(0.3, 0.7))
-train <- clients_immatriculations[ind==1,]
-test <- clients_immatriculations[ind==2,]
+ind <- sample(2, nrow(clientsImmatriculations), replace = TRUE, prob = c(0.3, 0.7))
+train <- clientsImmatriculations[ind == 1, ]
+test <- clientsImmatriculations[ind == 2, ]
 
 #---------------#
 # RANDOM FOREST #
 #---------------#
-randomForest <- randomForest(as.factor(categorie)~., data = train, proximity = TRUE)
-randomForest_class <- predict(randomForest, test, type="response")
+randomForest <- randomForest(as.factor(catégorie) ~ ., data = train, proximity = FALSE)
+randomForestClass <- predict(randomForest, test, type = "response")
 
-print(table(test$categorie, randomForest_class))
+print(table(test$catégorie, randomForestClass))
 
-randomForest_prob <- predict(randomForest, test, type="prob")
+randomForestProb <- predict(randomForest, test, type = "prob")
 
-test$categorie_predite <- (colnames(randomForest_prob)[max.col(randomForest_prob)])
+test$catégoriePrédite <- (colnames(randomForestProb)[max.col(randomForestProb)])
 
 #---------------------------#
 # CALCUL DES TAUX DE SUCCES #
 #---------------------------#
-taux_succes <- nrow(test[test$categorie==test$categorie_predite,])/nrow(test)
+taux_succes <- nrow(test[test$catégorie == test$catégoriePrédite, ]) / nrow(test)
 taux_succes
 
 #----------------------#
 # MATRICE DE CONFUSION #
 #----------------------#
 prediction <- predict(randomForest, test)
-confusionMatrix(prediction, as.factor(test$categorie))
+confusionMatrix(prediction, as.factor(test$catégorie))

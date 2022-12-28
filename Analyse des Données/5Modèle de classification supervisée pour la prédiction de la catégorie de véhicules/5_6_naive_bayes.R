@@ -15,64 +15,74 @@ library(caret)
 #-------------------------#
 # PREPARATION DES DONNEES #
 #-------------------------#
-clients_immatriculations <- read.csv(dec = ".", file = "Clients_immatriculations.csv", header = TRUE, sep = ",", stringsAsFactors = FALSE)
+clientsImmatriculations <- read.csv(
+    dec = ".",
+    file = "ClientsImmatriculations.csv",
+    header = TRUE,
+    sep = ",",
+    stringsAsFactors = FALSE,
+    fileEncoding = "UTF-8"
+)
 
-clients_immatriculations <- subset(clients_immatriculations, select=-immatriculation)
-clients_immatriculations <- subset(clients_immatriculations, select=-marque)
-clients_immatriculations <- subset(clients_immatriculations, select=-nom)
-clients_immatriculations <- subset(clients_immatriculations, select=-puissance)
-clients_immatriculations <- subset(clients_immatriculations, select=-longueur)
-clients_immatriculations <- subset(clients_immatriculations, select=-nbPlaces)
-clients_immatriculations <- subset(clients_immatriculations, select=-nbPortes)
-clients_immatriculations <- subset(clients_immatriculations, select=-couleur)
-clients_immatriculations <- subset(clients_immatriculations, select=-occasion)
-clients_immatriculations <- subset(clients_immatriculations, select=-prix)
+# Suppression des colonnes liées à la voiture (autre que la catégorie)
+sauvegardeClientsImmatriculations <- clientsImmatriculations
+
+clientsImmatriculations <- subset(clientsImmatriculations, select = -immatriculation)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -marque)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -nom)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -puissance)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -longueur)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -nbPlaces)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -nbPortes)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -couleur)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -occasion)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -prix)
 
 #----------------#
 # DATA PARTITION #
 # -------------- #
 set.seed(222)
-ind <- sample(2, nrow(clients_immatriculations), replace = TRUE, prob = c(0.3, 0.7))
-train <- clients_immatriculations[ind==1,]
-test <- clients_immatriculations[ind==2,]
+ind <- sample(2, nrow(clientsImmatriculations), replace = TRUE, prob = c(0.3, 0.7))
+train <- clientsImmatriculations[ind == 1, ]
+test <- clientsImmatriculations[ind == 2, ]
 
 #-------------#
 # NAIVE BAYES #
 #-------------#
-nb <- naive_bayes(categorie~., train, laplace = 0, usekernel = FALSE)
-nb_class <- predict(nb, test, type="class")
-print(table(test$categorie, nb_class))
-nb_prob <- predict(nb, test, type="prob")
-test$categorie_predite_1 <- (colnames(nb_prob)[max.col(nb_prob)])
+nb <- naive_bayes(catégorie ~ ., train, laplace = 0, usekernel = FALSE)
+nbClass <- predict(nb, test, type = "class")
+print(table(test$catégorie, nbClass))
+nbProb <- predict(nb, test, type = "prob")
+test$catégoriePrédite1 <- (colnames(nbProb)[max.col(nbProb)])
 
-nb <- naive_bayes(categorie~., train, laplace = 20, usekernel = FALSE)
-nb_class <- predict(nb, test, type="class")
-print(table(test$categorie, nb_class))
-nb_prob <- predict(nb, test, type="prob")
-test$categorie_predite_2 <- (colnames(nb_prob)[max.col(nb_prob)])
+nb <- naive_bayes(catégorie ~ ., train, laplace = 20, usekernel = FALSE)
+nbClass <- predict(nb, test, type = "class")
+print(table(test$catégorie, nbClass))
+nbProb <- predict(nb, test, type = "prob")
+test$catégoriePrédite2 <- (colnames(nbProb)[max.col(nbProb)])
 
-nb <- naive_bayes(categorie~., train, laplace = 0, usekernel = TRUE)
-nb_class <- predict(nb, test, type="class")
-print(table(test$categorie, nb_class))
-nb_prob <- predict(nb, test, type="prob")
-test$categorie_predite_3 <- (colnames(nb_prob)[max.col(nb_prob)])
+nb <- naive_bayes(catégorie ~ ., train, laplace = 0, usekernel = TRUE)
+nbClass <- predict(nb, test, type = "class")
+print(table(test$catégorie, nbClass))
+nbProb <- predict(nb, test, type = "prob")
+test$catégoriePrédite3 <- (colnames(nbProb)[max.col(nbProb)])
 
-nb <- naive_bayes(categorie~., train, laplace = 20, usekernel = TRUE)
-nb_class <- predict(nb, test, type="class")
-print(table(test$categorie, nb_class))
-nb_prob <- predict(nb, test, type="prob")
-test$categorie_predite_4 <- (colnames(nb_prob)[max.col(nb_prob)])
+nb <- naive_bayes(catégorie ~ ., train, laplace = 20, usekernel = TRUE)
+nbClass <- predict(nb, test, type = "class")
+print(table(test$catégorie, nbClass))
+nbProb <- predict(nb, test, type = "prob")
+test$catégoriePrédite4 <- (colnames(nbProb)[max.col(nbProb)])
 
 #---------------------------#
 # CALCUL DES TAUX DE SUCCES #
 #---------------------------#
-taux_succes_1 <- nrow(test[test$categorie==test$categorie_predite_1,])/nrow(test)
-taux_succes_2 <- nrow(test[test$categorie==test$categorie_predite_2,])/nrow(test)
-taux_succes_3 <- nrow(test[test$categorie==test$categorie_predite_3,])/nrow(test)
-taux_succes_4 <- nrow(test[test$categorie==test$categorie_predite_4,])/nrow(test)
+taux_succes_1 <- nrow(test[test$catégorie == test$catégoriePrédite1, ]) / nrow(test)
+taux_succes_2 <- nrow(test[test$catégorie == test$catégoriePrédite2, ]) / nrow(test)
+taux_succes_3 <- nrow(test[test$catégorie == test$catégoriePrédite3, ]) / nrow(test)
+taux_succes_4 <- nrow(test[test$catégorie == test$catégoriePrédite4, ]) / nrow(test)
 
 #----------------------#
 # MATRICE DE CONFUSION #
 #----------------------#
 prediction <- predict(nb, test)
-confusionMatrix(prediction, as.factor(test$categorie))
+confusionMatrix(prediction, as.factor(test$catégorie))

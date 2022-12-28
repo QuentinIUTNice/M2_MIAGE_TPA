@@ -3,84 +3,96 @@
 #--------------------------------------------#
 # INSTALLATION/MAJ DES LIRAIRIES NECESSAIRES #
 #--------------------------------------------#
+install.packages("caret")
 install.packages("e1071")
 
 #--------------------------------------#
 # ACTIVATION DES LIRAIRIES NECESSAIRES #
 #--------------------------------------#
+library(caret)
 library(e1071)
 
 #-------------------------#
 # PREPARATION DES DONNEES #
 #-------------------------#
-clients_immatriculations <- read.csv(dec = ".", file = "Clients_immatriculations.csv", header = TRUE, sep = ",", stringsAsFactors = FALSE)
+clientsImmatriculations <- read.csv(
+    dec = ".",
+    file = "ClientsImmatriculations.csv",
+    header = TRUE,
+    sep = ",",
+    stringsAsFactors = FALSE,
+    fileEncoding = "UTF-8"
+)
 
-clients_immatriculations <- subset(clients_immatriculations, select=-immatriculation)
-clients_immatriculations <- subset(clients_immatriculations, select=-marque)
-clients_immatriculations <- subset(clients_immatriculations, select=-nom)
-clients_immatriculations <- subset(clients_immatriculations, select=-puissance)
-clients_immatriculations <- subset(clients_immatriculations, select=-longueur)
-clients_immatriculations <- subset(clients_immatriculations, select=-nbPlaces)
-clients_immatriculations <- subset(clients_immatriculations, select=-nbPortes)
-clients_immatriculations <- subset(clients_immatriculations, select=-couleur)
-clients_immatriculations <- subset(clients_immatriculations, select=-occasion)
-clients_immatriculations <- subset(clients_immatriculations, select=-prix)
+# Suppression des colonnes liées à la voiture (autre que la catégorie)
+sauvegardeClientsImmatriculations <- clientsImmatriculations
+
+clientsImmatriculations <- subset(clientsImmatriculations, select = -immatriculation)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -marque)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -nom)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -puissance)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -longueur)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -nbPlaces)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -nbPortes)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -couleur)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -occasion)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -prix)
 
 #----------------#
 # DATA PARTITION #
 # -------------- #
 set.seed(222)
-ind <- sample(2, nrow(clients_immatriculations), replace = TRUE, prob = c(0.3, 0.7))
-train <- clients_immatriculations[ind==1,]
-test <- clients_immatriculations[ind==2,]
+ind <- sample(2, nrow(clientsImmatriculations), replace = TRUE, prob = c(0.3, 0.7))
+train <- clientsImmatriculations[ind == 1, ]
+test <- clientsImmatriculations[ind == 2, ]
 
 #-------------------------#
 # SUPPORT VECTOR MACHINES #
 #-------------------------#
-svm_linear <- svm(as.factor(categorie)~., train, probability=TRUE, kernel = "linear")
-svm_polynomial <- svm(as.factor(categorie)~., train, probability=TRUE, kernel = "polynomial")
-svm_radial <- svm(as.factor(categorie)~., train, probability=TRUE, kernel = "radial")
-svm_sigmoid <- svm(as.factor(categorie)~., train, probability=TRUE, kernel = "sigmoid")
+svmLinear <- svm(as.factor(catégorie) ~ ., train, probability = TRUE, kernel = "linear")
+svmPolynomial <- svm(as.factor(catégorie) ~ ., train, probability = TRUE, kernel = "polynomial")
+svmRadial <- svm(as.factor(catégorie) ~ ., train, probability = TRUE, kernel = "radial")
+svmSigmoid <- svm(as.factor(catégorie) ~ ., train, probability = TRUE, kernel = "sigmoid")
 
 # Test du classifeur : classe predite
-svm_linear_class <- predict(svm_linear, test, type="response")
-svm_polynomial_class <- predict(svm_polynomial, test, type="response")
-svm_radial_class <- predict(svm_radial, test, type="response")
-svm_sigmoid_class <- predict(svm_sigmoid, test, type="response")
+svmLinearClass <- predict(svmLinear, test, type = "response")
+svmPolynomialClass <- predict(svmPolynomial, test, type = "response")
+svmRadialClass <- predict(svmRadial, test, type = "response")
+svmSigmoidClass <- predict(svmSigmoid, test, type = "response")
 
 # Matrice de confusion
-print(table(test$categorie, svm_linear_class))
-print(table(test$categorie, svm_polynomial_class))
-print(table(test$categorie, svm_radial_class))
-print(table(test$categorie, svm_sigmoid_class))
+print(table(test$catégorie, svmLinearClass))
+print(table(test$catégorie, svmPolynomialClass))
+print(table(test$catégorie, svmRadialClass))
+print(table(test$catégorie, svmSigmoidClass))
 
 # Test du classifeur : probabilites pour chaque prediction
-svm_linear_prob <- predict(svm_linear, test, probability=TRUE)
-svm_polynomial_prob <- predict(svm_polynomial, test, probability=TRUE)
-svm_radial_prob <- predict(svm_radial, test, probability=TRUE)
-svm_sigmoid_prob <- predict(svm_sigmoid, test, probability=TRUE)
+svmLinearProb <- predict(svmLinear, test, probability = TRUE)
+svmPolynomialProb <- predict(svmPolynomial, test, probability = TRUE)
+svmRadialProb <- predict(svmRadial, test, probability = TRUE)
+svmSigmoidProb <- predict(svmSigmoid, test, probability = TRUE)
 
 # Recuperation des probabilites associees aux predictions
-svm_linear_prob <- attr(svm_linear_prob, "probabilities")
-svm_polynomial_prob <- attr(svm_polynomial_prob, "probabilities")
-svm_radial_prob <- attr(svm_radial_prob, "probabilities")
-svm_sigmoid_prob <- attr(svm_sigmoid_prob, "probabilities")
+svmLinearProb <- attr(svmLinearProb, "probabilities")
+svmPolynomialProb <- attr(svmPolynomialProb, "probabilities")
+svmRadialProb <- attr(svmRadialProb, "probabilities")
+svmSigmoidProb <- attr(svmSigmoidProb, "probabilities")
 
-test$categorie_predite_linear <- (colnames(svm_linear_prob)[max.col(svm_linear_prob)])
-test$categorie_predite_polynomial <- (colnames(svm_polynomial_prob)[max.col(svm_polynomial_prob)])
-test$categorie_predite_radial <- (colnames(svm_radial_prob)[max.col(svm_radial_prob)])
-test$categorie_predite_sigmoid <- (colnames(svm_sigmoid_prob)[max.col(svm_sigmoid_prob)])
+test$catégoriePréditeLinear <- (colnames(svmLinearProb)[max.col(svmLinearProb)])
+test$catégoriePréditePolynomial <- (colnames(svmPolynomialProb)[max.col(svmPolynomialProb)])
+test$catégoriePréditeRadial <- (colnames(svmRadialProb)[max.col(svmRadialProb)])
+test$catégoriePréditeSigmoid <- (colnames(svmSigmoidProb)[max.col(svmSigmoidProb)])
 
 #---------------------------#
 # CALCUL DES TAUX DE SUCCES #
 #---------------------------#
-taux_succes_linear <- nrow(test[test$categorie==test$categorie_predite_linear,])/nrow(test)
-taux_succes_polynomial <- nrow(test[test$categorie==test$categorie_predite_polynomial,])/nrow(test)
-taux_succes_radial <- nrow(test[test$categorie==test$categorie_predite_radial,])/nrow(test)
-taux_succes_sigmoid <- nrow(test[test$categorie==test$categorie_predite_sigmoid,])/nrow(test)
+tauxSuccesLinear <- nrow(test[test$catégorie == test$catégoriePréditeLinear, ]) / nrow(test)
+tauxSuccesPolynomial <- nrow(test[test$catégorie == test$catégoriePréditePolynomial, ]) / nrow(test)
+tauxSuccesRadial <- nrow(test[test$catégorie == test$catégoriePréditeRadial, ]) / nrow(test)
+tauxSuccesSigmoid <- nrow(test[test$catégorie == test$catégoriePréditeSigmoid, ]) / nrow(test)
 
 #----------------------#
 # MATRICE DE CONFUSION #
 #----------------------#
-prediction <- predict(svm_radial, test)
-confusionMatrix(prediction, as.factor(test$categorie))
+prediction <- predict(svmRadial, test)
+confusionMatrix(prediction, as.factor(test$catégorie))
