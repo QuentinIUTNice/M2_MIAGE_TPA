@@ -1,14 +1,14 @@
-marque,nom,puissance,longueur,nbPlaces,nbPortes,couleur,occasion,prix,categorie
-Volvo,S80 T6,272,tres longue,5,5,blanc,false,50500,berline
-Volvo,S80 T6,272,tres longue,5,5,noir,false,50500,berline
-Volvo,S80 T6,272,tres longue,5,5,rouge,false,50500,berline
-Volvo,S80 T6,272,tres longue,5,5,gris,true,35350,berline
-Volvo,S80 T6,272,tres longue,5,5,bleu,true,35350,berline
-Volvo,S80 T6,272,tres longue,5,5,gris,false,50500,berline
-Volvo,S80 T6,272,tres longue,5,5,bleu,false,50500,berline
-Volvo,S80 T6,272,tres longue,5,5,rouge,true,35350,berline
-Volvo,S80 T6,272,tres longue,5,5,blanc,true,35350,berline
-Volvo,S80 T6,272,tres longue,5,5,noir,true,35350,berline
+marque,nom,puissance,longueur,nbPlaces,nbPortes,couleur,occasion,prix,catégorie
+Volvo,S80 T6,272,très longue,5,5,blanc,false,50500,routière
+Volvo,S80 T6,272,très longue,5,5,noir,false,50500,routière
+Volvo,S80 T6,272,très longue,5,5,rouge,false,50500,routière
+Volvo,S80 T6,272,très longue,5,5,gris,true,35350,routière
+Volvo,S80 T6,272,très longue,5,5,bleu,true,35350,routière
+Volvo,S80 T6,272,très longue,5,5,gris,false,50500,routière
+Volvo,S80 T6,272,très longue,5,5,bleu,false,50500,routière
+Volvo,S80 T6,272,très longue,5,5,rouge,true,35350,routière
+Volvo,S80 T6,272,très longue,5,5,blanc,true,35350,routière
+Volvo,S80 T6,272,très longue,5,5,noir,true,35350,routière
 Volkswagen,Touran 2.0 FSI,150,longue,7,5,rouge,false,27340,monospace
 Volkswagen,Touran 2.0 FSI,150,longue,7,5,gris,true,19138,monospace
 Volkswagen,Touran 2.0 FSI,150,longue,7,5,bleu,true,19138,monospace
@@ -29,66 +29,66 @@ Volkswagen,Polo 1.2 6V,55,courte,5,3,rouge,true,8540,citadine
 Volkswagen,Polo 1.2 6V,55,courte,5,3,rouge,false,12200,citadine
 Volkswagen,Polo 1.2 6V,55,courte,5,3,gris,false,12200,citadine
 Volkswagen,Polo 1.2 6V,55,courte,5,3,gris,true,8540,citadine
-Volkswagen,New Beatle 1.8,110,moyenne,5,5,blanc,true,18641,compacte
-Volkswagen,New Beatle 1.8,110,moyenne,5,5,noir,true,18641,compacte
-Volkswagen,New Beatle 1.8,110,moyenne,5,5,rouge,true,18641,compacte
-Volkswagen,New Beatle 1.8,110,moyenne,5,5,gris,true,18641,compacte
-Volkswagen,New Beatle 1.8,110,moyenne,5,5,bleu,true,18641,compacte
-Volkswagen,New Beatle 1.8,110,moyenne,5,5,rouge,false,26630,compacte
-Volkswagen,New Beatle 1.8,110,moyenne,5,5,gris,false,26630,compacte
-Volkswagen,New Beatle 1.8,110,moyenne,5,5,bleu,false,26630,compacte
-Volkswagen,New Beatle 1.8,110,moyenne,5,5,blanc,false,26630,compacte
-Volkswagen,New Beatle 1.8,110,moyenne,5,5,noir,false,26630,compacte
-Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,rouge,true,16029,berline
-Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,gris,true,16029,berline
-Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,bleu,true,16029,berline
-Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,blanc,true,16029,berline
-Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,noir,true,16029,berline
-Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,blanc,false,22900,berline
-Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,noir,false,22900,berline
-Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,bleu,false,22900,berline
-Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,rouge,false,22900,berline
-Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,gris,false,22900,berline
-Skoda,Superb 2.8 V6,193,tres longue,5,5,rouge,false,31790,berline
-Skoda,Superb 2.8 V6,193,tres longue,5,5,gris,false,31790,berline
-Skoda,Superb 2.8 V6,193,tres longue,5,5,bleu,false,31790,berline
-Skoda,Superb 2.8 V6,193,tres longue,5,5,noir,false,31790,berline
-Skoda,Superb 2.8 V6,193,tres longue,5,5,blanc,false,31790,berline
-Seat,Toledo 1.6,102,longue,5,5,blanc,false,18880,familiale
-Seat,Toledo 1.6,102,longue,5,5,noir,false,18880,familiale
-Seat,Toledo 1.6,102,longue,5,5,rouge,false,18880,familiale
-Seat,Toledo 1.6,102,longue,5,5,gris,false,18880,familiale
-Seat,Toledo 1.6,102,longue,5,5,bleu,false,18880,familiale
-Saab,9.3 1.8T,150,longue,5,5,blanc,true,27020,berline
-Saab,9.3 1.8T,150,longue,5,5,rouge,true,27020,berline
-Saab,9.3 1.8T,150,longue,5,5,gris,true,27020,berline
-Saab,9.3 1.8T,150,longue,5,5,bleu,true,27020,berline
-Saab,9.3 1.8T,150,longue,5,5,noir,true,27020,berline
-Saab,9.3 1.8T,150,longue,5,5,gris,false,38600,berline
-Saab,9.3 1.8T,150,longue,5,5,bleu,false,38600,berline
-Saab,9.3 1.8T,150,longue,5,5,noir,false,38600,berline
-Saab,9.3 1.8T,150,longue,5,5,rouge,false,38600,berline
-Saab,9.3 1.8T,150,longue,5,5,blanc,false,38600,berline
-Renault,Vel Satis 3.5 V6,245,tres longue,5,5,gris,true,34440,routiere
-Renault,Vel Satis 3.5 V6,245,tres longue,5,5,noir,true,34440,routiere
-Renault,Vel Satis 3.5 V6,245,tres longue,5,5,bleu,true,34440,routiere
-Renault,Vel Satis 3.5 V6,245,tres longue,5,5,rouge,true,34440,routiere
-Renault,Vel Satis 3.5 V6,245,tres longue,5,5,blanc,true,34440,routiere
-Renault,Vel Satis 3.5 V6,245,tres longue,5,5,gris,false,49200,routiere
-Renault,Vel Satis 3.5 V6,245,tres longue,5,5,bleu,false,49200,routiere
-Renault,Vel Satis 3.5 V6,245,tres longue,5,5,blanc,false,49200,routiere
-Renault,Vel Satis 3.5 V6,245,tres longue,5,5,noir,false,49200,routiere
-Renault,Vel Satis 3.5 V6,245,tres longue,5,5,rouge,false,49200,routiere
-Renault,Megane 2.0 16V,135,moyenne,5,5,gris,true,15644,berline
-Renault,Megane 2.0 16V,135,moyenne,5,5,bleu,true,15644,berline
-Renault,Megane 2.0 16V,135,moyenne,5,5,rouge,true,15644,berline
-Renault,Megane 2.0 16V,135,moyenne,5,5,blanc,true,15644,berline
-Renault,Megane 2.0 16V,135,moyenne,5,5,noir,true,15644,berline
-Renault,Megane 2.0 16V,135,moyenne,5,5,gris,false,22350,berline
-Renault,Megane 2.0 16V,135,moyenne,5,5,bleu,false,22350,berline
-Renault,Megane 2.0 16V,135,moyenne,5,5,blanc,false,22350,berline
-Renault,Megane 2.0 16V,135,moyenne,5,5,noir,false,22350,berline
-Renault,Megane 2.0 16V,135,moyenne,5,5,rouge,false,22350,berline
+Volkswagen,New Beatle 1.8,110,moyenne,5,5,blanc,true,18641,coupé
+Volkswagen,New Beatle 1.8,110,moyenne,5,5,noir,true,18641,coupé
+Volkswagen,New Beatle 1.8,110,moyenne,5,5,rouge,true,18641,coupé
+Volkswagen,New Beatle 1.8,110,moyenne,5,5,gris,true,18641,coupé
+Volkswagen,New Beatle 1.8,110,moyenne,5,5,bleu,true,18641,coupé
+Volkswagen,New Beatle 1.8,110,moyenne,5,5,rouge,false,26630,coupé
+Volkswagen,New Beatle 1.8,110,moyenne,5,5,gris,false,26630,coupé
+Volkswagen,New Beatle 1.8,110,moyenne,5,5,bleu,false,26630,coupé
+Volkswagen,New Beatle 1.8,110,moyenne,5,5,blanc,false,26630,coupé
+Volkswagen,New Beatle 1.8,110,moyenne,5,5,noir,false,26630,coupé
+Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,rouge,true,16029,compacte
+Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,gris,true,16029,compacte
+Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,bleu,true,16029,compacte
+Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,blanc,true,16029,compacte
+Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,noir,true,16029,compacte
+Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,blanc,false,22900,compacte
+Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,noir,false,22900,compacte
+Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,bleu,false,22900,compacte
+Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,rouge,false,22900,compacte
+Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,gris,false,22900,compacte
+Skoda,Superb 2.8 V6,193,très longue,5,5,rouge,false,31790,routière
+Skoda,Superb 2.8 V6,193,très longue,5,5,gris,false,31790,routière
+Skoda,Superb 2.8 V6,193,très longue,5,5,bleu,false,31790,routière
+Skoda,Superb 2.8 V6,193,très longue,5,5,noir,false,31790,routière
+Skoda,Superb 2.8 V6,193,très longue,5,5,blanc,false,31790,routière
+Seat,Toledo 1.6,102,longue,5,5,blanc,false,18880,compacte
+Seat,Toledo 1.6,102,longue,5,5,noir,false,18880,compacte
+Seat,Toledo 1.6,102,longue,5,5,rouge,false,18880,compacte
+Seat,Toledo 1.6,102,longue,5,5,gris,false,18880,compacte
+Seat,Toledo 1.6,102,longue,5,5,bleu,false,18880,compacte
+Saab,9.3 1.8T,150,longue,5,5,blanc,true,27020,familiale
+Saab,9.3 1.8T,150,longue,5,5,rouge,true,27020,familiale
+Saab,9.3 1.8T,150,longue,5,5,gris,true,27020,familiale
+Saab,9.3 1.8T,150,longue,5,5,bleu,true,27020,familiale
+Saab,9.3 1.8T,150,longue,5,5,noir,true,27020,familiale
+Saab,9.3 1.8T,150,longue,5,5,gris,false,38600,familiale
+Saab,9.3 1.8T,150,longue,5,5,bleu,false,38600,familiale
+Saab,9.3 1.8T,150,longue,5,5,noir,false,38600,familiale
+Saab,9.3 1.8T,150,longue,5,5,rouge,false,38600,familiale
+Saab,9.3 1.8T,150,longue,5,5,blanc,false,38600,familiale
+Renault,Vel Satis 3.5 V6,245,très longue,5,5,gris,true,34440,routière
+Renault,Vel Satis 3.5 V6,245,très longue,5,5,noir,true,34440,routière
+Renault,Vel Satis 3.5 V6,245,très longue,5,5,bleu,true,34440,routière
+Renault,Vel Satis 3.5 V6,245,très longue,5,5,rouge,true,34440,routière
+Renault,Vel Satis 3.5 V6,245,très longue,5,5,blanc,true,34440,routière
+Renault,Vel Satis 3.5 V6,245,très longue,5,5,gris,false,49200,routière
+Renault,Vel Satis 3.5 V6,245,très longue,5,5,bleu,false,49200,routière
+Renault,Vel Satis 3.5 V6,245,très longue,5,5,blanc,false,49200,routière
+Renault,Vel Satis 3.5 V6,245,très longue,5,5,noir,false,49200,routière
+Renault,Vel Satis 3.5 V6,245,très longue,5,5,rouge,false,49200,routière
+Renault,Megane 2.0 16V,135,moyenne,5,5,gris,true,15644,compacte
+Renault,Megane 2.0 16V,135,moyenne,5,5,bleu,true,15644,compacte
+Renault,Megane 2.0 16V,135,moyenne,5,5,rouge,true,15644,compacte
+Renault,Megane 2.0 16V,135,moyenne,5,5,blanc,true,15644,compacte
+Renault,Megane 2.0 16V,135,moyenne,5,5,noir,true,15644,compacte
+Renault,Megane 2.0 16V,135,moyenne,5,5,gris,false,22350,compacte
+Renault,Megane 2.0 16V,135,moyenne,5,5,bleu,false,22350,compacte
+Renault,Megane 2.0 16V,135,moyenne,5,5,blanc,false,22350,compacte
+Renault,Megane 2.0 16V,135,moyenne,5,5,noir,false,22350,compacte
+Renault,Megane 2.0 16V,135,moyenne,5,5,rouge,false,22350,compacte
 Renault,Laguna 2.0T,170,longue,5,5,rouge,true,19110,familiale
 Renault,Laguna 2.0T,170,longue,5,5,gris,true,19110,familiale
 Renault,Laguna 2.0T,170,longue,5,5,bleu,true,19110,familiale
@@ -124,46 +124,46 @@ Nissan,Primera 1.6,109,longue,5,5,bleu,false,18650,familiale
 Nissan,Primera 1.6,109,longue,5,5,rouge,false,18650,familiale
 Nissan,Primera 1.6,109,longue,5,5,gris,false,18650,familiale
 Nissan,Primera 1.6,109,longue,5,5,blanc,false,18650,familiale
-Nissan,Maxima 3.0 V6,200,tres longue,5,5,noir,false,30000,routiere
-Nissan,Maxima 3.0 V6,200,tres longue,5,5,gris,false,30000,routiere
-Nissan,Maxima 3.0 V6,200,tres longue,5,5,bleu,false,30000,routiere
-Nissan,Maxima 3.0 V6,200,tres longue,5,5,rouge,false,30000,routiere
-Nissan,Maxima 3.0 V6,200,tres longue,5,5,blanc,false,30000,routiere
+Nissan,Maxima 3.0 V6,200,très longue,5,5,noir,false,30000,routière
+Nissan,Maxima 3.0 V6,200,très longue,5,5,gris,false,30000,routière
+Nissan,Maxima 3.0 V6,200,très longue,5,5,bleu,false,30000,routière
+Nissan,Maxima 3.0 V6,200,très longue,5,5,rouge,false,30000,routière
+Nissan,Maxima 3.0 V6,200,très longue,5,5,blanc,false,30000,routière
 Nissan,Almera 1.8,115,moyenne,5,5,gris,false,16450,compacte
 Nissan,Almera 1.8,115,moyenne,5,5,bleu,false,16450,compacte
 Nissan,Almera 1.8,115,moyenne,5,5,noir,false,16450,compacte
 Nissan,Almera 1.8,115,moyenne,5,5,rouge,false,16450,compacte
 Nissan,Almera 1.8,115,moyenne,5,5,blanc,false,16450,compacte
-Mini,Copper 1.6 16V,115,courte,5,5,gris,true,12740,compacte
-Mini,Copper 1.6 16V,115,courte,5,5,bleu,true,12740,compacte
-Mini,Copper 1.6 16V,115,courte,5,5,rouge,true,12740,compacte
-Mini,Copper 1.6 16V,115,courte,5,5,noir,true,12740,compacte
-Mini,Copper 1.6 16V,115,courte,5,5,blanc,true,12740,compacte
-Mini,Copper 1.6 16V,115,courte,5,5,gris,false,18200,compacte
-Mini,Copper 1.6 16V,115,courte,5,5,bleu,false,18200,compacte
-Mini,Copper 1.6 16V,115,courte,5,5,rouge,false,18200,compacte
-Mini,Copper 1.6 16V,115,courte,5,5,noir,false,18200,compacte
-Mini,Copper 1.6 16V,115,courte,5,5,blanc,false,18200,compacte
-Mercedes,S500,306,tres longue,5,5,noir,true,70910,limousine
-Mercedes,S500,306,tres longue,5,5,bleu,true,70910,limousine
-Mercedes,S500,306,tres longue,5,5,rouge,true,70910,limousine
-Mercedes,S500,306,tres longue,5,5,blanc,true,70910,limousine
-Mercedes,S500,306,tres longue,5,5,bleu,false,101300,limousine
-Mercedes,S500,306,tres longue,5,5,gris,true,70910,limousine
-Mercedes,S500,306,tres longue,5,5,noir,false,101300,limousine
-Mercedes,S500,306,tres longue,5,5,blanc,false,101300,limousine
-Mercedes,S500,306,tres longue,5,5,rouge,false,101300,limousine
-Mercedes,S500,306,tres longue,5,5,gris,false,101300,limousine
-Mercedes,A200,136,moyenne,5,5,blanc,false,25900,berline
-Mercedes,A200,136,moyenne,5,5,noir,false,25900,berline
-Mercedes,A200,136,moyenne,5,5,blanc,true,18130,berline
-Mercedes,A200,136,moyenne,5,5,rouge,true,18130,berline
-Mercedes,A200,136,moyenne,5,5,noir,true,18130,berline
-Mercedes,A200,136,moyenne,5,5,rouge,false,25900,berline
-Mercedes,A200,136,moyenne,5,5,bleu,true,18130,berline
-Mercedes,A200,136,moyenne,5,5,gris,true,18130,berline
-Mercedes,A200,136,moyenne,5,5,gris,false,25900,berline
-Mercedes,A200,136,moyenne,5,5,bleu,false,25900,berline
+Mini,Copper 1.6 16V,115,courte,5,5,gris,true,12740,citadine
+Mini,Copper 1.6 16V,115,courte,5,5,bleu,true,12740,citadine
+Mini,Copper 1.6 16V,115,courte,5,5,rouge,true,12740,citadine
+Mini,Copper 1.6 16V,115,courte,5,5,noir,true,12740,citadine
+Mini,Copper 1.6 16V,115,courte,5,5,blanc,true,12740,citadine
+Mini,Copper 1.6 16V,115,courte,5,5,gris,false,18200,citadine
+Mini,Copper 1.6 16V,115,courte,5,5,bleu,false,18200,citadine
+Mini,Copper 1.6 16V,115,courte,5,5,rouge,false,18200,citadine
+Mini,Copper 1.6 16V,115,courte,5,5,noir,false,18200,citadine
+Mini,Copper 1.6 16V,115,courte,5,5,blanc,false,18200,citadine
+Mercedes,S500,306,très longue,5,5,noir,true,70910,berline
+Mercedes,S500,306,très longue,5,5,bleu,true,70910,berline
+Mercedes,S500,306,très longue,5,5,rouge,true,70910,berline
+Mercedes,S500,306,très longue,5,5,blanc,true,70910,berline
+Mercedes,S500,306,très longue,5,5,bleu,false,101300,berline
+Mercedes,S500,306,très longue,5,5,gris,true,70910,berline
+Mercedes,S500,306,très longue,5,5,noir,false,101300,berline
+Mercedes,S500,306,très longue,5,5,blanc,false,101300,berline
+Mercedes,S500,306,très longue,5,5,rouge,false,101300,berline
+Mercedes,S500,306,très longue,5,5,gris,false,101300,berline
+Mercedes,A200,136,moyenne,5,5,blanc,false,25900,polyvalente
+Mercedes,A200,136,moyenne,5,5,noir,false,25900,polyvalente
+Mercedes,A200,136,moyenne,5,5,blanc,true,18130,polyvalente
+Mercedes,A200,136,moyenne,5,5,rouge,true,18130,polyvalente
+Mercedes,A200,136,moyenne,5,5,noir,true,18130,polyvalente
+Mercedes,A200,136,moyenne,5,5,rouge,false,25900,polyvalente
+Mercedes,A200,136,moyenne,5,5,bleu,true,18130,polyvalente
+Mercedes,A200,136,moyenne,5,5,gris,true,18130,polyvalente
+Mercedes,A200,136,moyenne,5,5,gris,false,25900,polyvalente
+Mercedes,A200,136,moyenne,5,5,bleu,false,25900,polyvalente
 Lancia,Ypsilon 1.4 16V,90,courte,5,3,rouge,false,13500,citadine
 Lancia,Ypsilon 1.4 16V,90,courte,5,3,bleu,true,9450,citadine
 Lancia,Ypsilon 1.4 16V,90,courte,5,3,gris,false,13500,citadine
@@ -189,26 +189,26 @@ Jaguar,X-Type 2.5 V6,197,longue,5,5,noir,true,25970,berline
 Jaguar,X-Type 2.5 V6,197,longue,5,5,noir,false,37100,berline
 Jaguar,X-Type 2.5 V6,197,longue,5,5,blanc,false,37100,berline
 Jaguar,X-Type 2.5 V6,197,longue,5,5,bleu,false,37100,berline
-Hyundai,Matrix 1.6,103,longue,7,5,bleu,false,15960,monospace
-Hyundai,Matrix 1.6,103,longue,7,5,blanc,false,15960,monospace
-Hyundai,Matrix 1.6,103,longue,7,5,gris,false,15960,monospace
-Hyundai,Matrix 1.6,103,longue,7,5,noir,false,15960,monospace
-Hyundai,Matrix 1.6,103,longue,7,5,rouge,false,15960,monospace
+Hyunda�,Matrix 1.6,103,longue,7,5,bleu,false,15960,monospace
+Hyunda�,Matrix 1.6,103,longue,7,5,blanc,false,15960,monospace
+Hyunda�,Matrix 1.6,103,longue,7,5,gris,false,15960,monospace
+Hyunda�,Matrix 1.6,103,longue,7,5,noir,false,15960,monospace
+Hyunda�,Matrix 1.6,103,longue,7,5,rouge,false,15960,monospace
 Honda,FR-V 1.7,125,longue,7,5,noir,false,19550,monospace
 Honda,FR-V 1.7,125,longue,7,5,bleu,false,19550,monospace
 Honda,FR-V 1.7,125,longue,7,5,gris,false,19550,monospace
 Honda,FR-V 1.7,125,longue,7,5,blanc,false,19550,monospace
 Honda,FR-V 1.7,125,longue,7,5,rouge,false,19550,monospace
-Ford,Mondeo 1.8,125,longue,5,5,blanc,true,16730,berline
-Ford,Mondeo 1.8,125,longue,5,5,gris,true,16730,berline
-Ford,Mondeo 1.8,125,longue,5,5,bleu,true,16730,berline
-Ford,Mondeo 1.8,125,longue,5,5,noir,true,16730,berline
-Ford,Mondeo 1.8,125,longue,5,5,rouge,true,16730,berline
-Ford,Mondeo 1.8,125,longue,5,5,bleu,false,23900,berline
-Ford,Mondeo 1.8,125,longue,5,5,blanc,false,23900,berline
-Ford,Mondeo 1.8,125,longue,5,5,noir,false,23900,berline
-Ford,Mondeo 1.8,125,longue,5,5,gris,false,23900,berline
-Ford,Mondeo 1.8,125,longue,5,5,rouge,false,23900,berline
+Ford,Mondeo 1.8,125,longue,5,5,blanc,true,16730,familiale
+Ford,Mondeo 1.8,125,longue,5,5,gris,true,16730,familiale
+Ford,Mondeo 1.8,125,longue,5,5,bleu,true,16730,familiale
+Ford,Mondeo 1.8,125,longue,5,5,noir,true,16730,familiale
+Ford,Mondeo 1.8,125,longue,5,5,rouge,true,16730,familiale
+Ford,Mondeo 1.8,125,longue,5,5,bleu,false,23900,familiale
+Ford,Mondeo 1.8,125,longue,5,5,blanc,false,23900,familiale
+Ford,Mondeo 1.8,125,longue,5,5,noir,false,23900,familiale
+Ford,Mondeo 1.8,125,longue,5,5,gris,false,23900,familiale
+Ford,Mondeo 1.8,125,longue,5,5,rouge,false,23900,familiale
 Fiat,Croma 2.2,147,longue,5,5,blanc,true,17346,familiale
 Fiat,Croma 2.2,147,longue,5,5,bleu,true,17346,familiale
 Fiat,Croma 2.2,147,longue,5,5,rouge,true,17346,familiale
@@ -224,31 +224,31 @@ Daihatsu,Cuore 1.0,58,courte,5,3,blanc,false,8850,citadine
 Daihatsu,Cuore 1.0,58,courte,5,3,rouge,false,8850,citadine
 Daihatsu,Cuore 1.0,58,courte,5,3,bleu,false,8850,citadine
 Daihatsu,Cuore 1.0,58,courte,5,3,gris,false,8850,citadine
-Dacia,Logan 1.6 MPI,90,moyenne,5,5,blanc,false,7500,compacte
-Dacia,Logan 1.6 MPI,90,moyenne,5,5,rouge,false,7500,compacte
-Dacia,Logan 1.6 MPI,90,moyenne,5,5,noir,false,7500,compacte
-Dacia,Logan 1.6 MPI,90,moyenne,5,5,gris,false,7500,compacte
-Dacia,Logan 1.6 MPI,90,moyenne,5,5,bleu,false,7500,compacte
-BMW,M5,507,tres longue,5,5,bleu,true,66360,grand tourisme
-BMW,M5,507,tres longue,5,5,gris,false,94800,grand tourisme
-BMW,M5,507,tres longue,5,5,blanc,false,94800,grand tourisme
-BMW,M5,507,tres longue,5,5,noir,false,94800,grand tourisme
-BMW,M5,507,tres longue,5,5,rouge,true,66360,grand tourisme
-BMW,M5,507,tres longue,5,5,blanc,true,66360,grand tourisme
-BMW,M5,507,tres longue,5,5,bleu,false,94800,grand tourisme
-BMW,M5,507,tres longue,5,5,gris,true,66360,grand tourisme
-BMW,M5,507,tres longue,5,5,rouge,false,94800,grand tourisme
-BMW,M5,507,tres longue,5,5,noir,true,66360,grand tourisme
-BMW,120i,150,moyenne,5,5,rouge,true,25060,berline
-BMW,120i,150,moyenne,5,5,bleu,false,35800,berline
-BMW,120i,150,moyenne,5,5,blanc,false,35800,berline
-BMW,120i,150,moyenne,5,5,gris,false,35800,berline
-BMW,120i,150,moyenne,5,5,rouge,false,35800,berline
-BMW,120i,150,moyenne,5,5,bleu,true,25060,berline
-BMW,120i,150,moyenne,5,5,gris,true,25060,berline
-BMW,120i,150,moyenne,5,5,noir,true,25060,berline
-BMW,120i,150,moyenne,5,5,blanc,true,25060,berline
-BMW,120i,150,moyenne,5,5,noir,false,35800,berline
+Dacia,Logan 1.6 MPI,90,moyenne,5,5,blanc,false,7500,polyvalente
+Dacia,Logan 1.6 MPI,90,moyenne,5,5,rouge,false,7500,polyvalente
+Dacia,Logan 1.6 MPI,90,moyenne,5,5,noir,false,7500,polyvalente
+Dacia,Logan 1.6 MPI,90,moyenne,5,5,gris,false,7500,polyvalente
+Dacia,Logan 1.6 MPI,90,moyenne,5,5,bleu,false,7500,polyvalente
+BMW,M5,507,très longue,5,5,bleu,true,66360,routière
+BMW,M5,507,très longue,5,5,gris,false,94800,routière
+BMW,M5,507,très longue,5,5,blanc,false,94800,routière
+BMW,M5,507,très longue,5,5,noir,false,94800,routière
+BMW,M5,507,très longue,5,5,rouge,true,66360,routière
+BMW,M5,507,très longue,5,5,blanc,true,66360,routière
+BMW,M5,507,très longue,5,5,bleu,false,94800,routière
+BMW,M5,507,très longue,5,5,gris,true,66360,routière
+BMW,M5,507,très longue,5,5,rouge,false,94800,routière
+BMW,M5,507,très longue,5,5,noir,true,66360,routière
+BMW,120i,150,moyenne,5,5,rouge,true,25060,compacte
+BMW,120i,150,moyenne,5,5,bleu,false,35800,compacte
+BMW,120i,150,moyenne,5,5,blanc,false,35800,compacte
+BMW,120i,150,moyenne,5,5,gris,false,35800,compacte
+BMW,120i,150,moyenne,5,5,rouge,false,35800,compacte
+BMW,120i,150,moyenne,5,5,bleu,true,25060,compacte
+BMW,120i,150,moyenne,5,5,gris,true,25060,compacte
+BMW,120i,150,moyenne,5,5,noir,true,25060,compacte
+BMW,120i,150,moyenne,5,5,blanc,true,25060,compacte
+BMW,120i,150,moyenne,5,5,noir,false,35800,compacte
 Audi,A3 2.0 FSI,150,moyenne,5,5,noir,true,19950,compacte
 Audi,A3 2.0 FSI,150,moyenne,5,5,noir,false,28500,compacte
 Audi,A3 2.0 FSI,150,moyenne,5,5,rouge,false,28500,compacte
@@ -259,13 +259,13 @@ Audi,A3 2.0 FSI,150,moyenne,5,5,bleu,true,19950,compacte
 Audi,A3 2.0 FSI,150,moyenne,5,5,bleu,false,28500,compacte
 Audi,A3 2.0 FSI,150,moyenne,5,5,gris,false,28500,compacte
 Audi,A3 2.0 FSI,150,moyenne,5,5,rouge,true,19950,compacte
-Audi,A2 1.4,75,courte,5,5,noir,true,12817,citadine
-Audi,A2 1.4,75,courte,5,5,bleu,false,18310,citadine
-Audi,A2 1.4,75,courte,5,5,gris,false,18310,citadine
-Audi,A2 1.4,75,courte,5,5,bleu,true,12817,citadine
-Audi,A2 1.4,75,courte,5,5,gris,true,12817,citadine
-Audi,A2 1.4,75,courte,5,5,noir,false,18310,citadine
-Audi,A2 1.4,75,courte,5,5,rouge,false,18310,citadine
-Audi,A2 1.4,75,courte,5,5,blanc,true,12817,citadine
-Audi,A2 1.4,75,courte,5,5,rouge,true,12817,citadine
-Audi,A2 1.4,75,courte,5,5,blanc,false,18310,citadine
+Audi,A2 1.4,75,courte,5,5,noir,true,12817,minispace
+Audi,A2 1.4,75,courte,5,5,bleu,false,18310,minispace
+Audi,A2 1.4,75,courte,5,5,gris,false,18310,minispace
+Audi,A2 1.4,75,courte,5,5,bleu,true,12817,minispace
+Audi,A2 1.4,75,courte,5,5,gris,true,12817,minispace
+Audi,A2 1.4,75,courte,5,5,noir,false,18310,minispace
+Audi,A2 1.4,75,courte,5,5,rouge,false,18310,minispace
+Audi,A2 1.4,75,courte,5,5,blanc,true,12817,minispace
+Audi,A2 1.4,75,courte,5,5,rouge,true,12817,minispace
+Audi,A2 1.4,75,courte,5,5,blanc,false,18310,minispace

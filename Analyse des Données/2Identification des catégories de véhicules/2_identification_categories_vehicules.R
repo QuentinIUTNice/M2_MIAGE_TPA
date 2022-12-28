@@ -42,9 +42,9 @@ modelesCategories <- catalogue %>% distinct(nom, catégorie)
 #------------------------------------------------------#
 write.table(modelesCategories, file = "Catégories.csv", sep = ",", dec = ".", row.names = F)
 
-#-----------------------------------------------------------------------#
-# Suppression des variables marque et nom de l'ensemble d'apprentissage #
-#-----------------------------------------------------------------------#
+#-------------------------------------------------------#
+# Suppression des variables inutiles pour créer l'arbre #
+#-------------------------------------------------------#
 sauvegardeCatalogue <- catalogue
 
 catalogue <- subset(catalogue, select = -marque)
