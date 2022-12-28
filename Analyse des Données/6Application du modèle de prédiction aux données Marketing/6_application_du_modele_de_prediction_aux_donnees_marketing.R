@@ -1,55 +1,61 @@
 ## Application du modèle de prédiction aux données Marketing
 
-# Chargement des données
-
-
 #--------------------------------------------#
 # INSTALLATION/MAJ DES LIRAIRIES NECESSAIRES #
 #--------------------------------------------#
-install.packages("rpart")
+install.packages("caret")
+install.packages("e1071")
+install.packages("randomForest")
 
 #--------------------------------------#
 # ACTIVATION DES LIRAIRIES NECESSAIRES #
 #--------------------------------------#
-library(rpart)
+library(caret)
+library(e1071)
+library(randomForest)
 
 #-------------------------#
 # PREPARATION DES DONNEES #
 #-------------------------#
-clients_immatriculations <- read.csv(dec = ".", file = "Clients_immatriculations.csv", header = TRUE, sep = ",", stringsAsFactors = FALSE)
-marketing <- read.csv(dec = ".", file = "marketing.csv", header = TRUE, sep = ",", stringsAsFactors = FALSE)
+clientsImmatriculations <- read.csv(
+    dec = ".",
+    file = "ClientsImmatriculations.csv",
+    header = TRUE,
+    sep = ",",
+    stringsAsFactors = FALSE,
+    fileEncoding = "UTF-8"
+)
+marketing <- read.csv(
+    dec = ".",
+    file = "Marketing.csv",
+    header = TRUE,
+    sep = ",",
+    stringsAsFactors = FALSE,
+    fileEncoding = "UTF-8"
+)
 
-clients_immatriculations <- subset(clients_immatriculations, select=-immatriculation)
-clients_immatriculations <- subset(clients_immatriculations, select=-marque)
-clients_immatriculations <- subset(clients_immatriculations, select=-nom)
-clients_immatriculations <- subset(clients_immatriculations, select=-puissance)
-clients_immatriculations <- subset(clients_immatriculations, select=-longueur)
-clients_immatriculations <- subset(clients_immatriculations, select=-nbPlaces)
-clients_immatriculations <- subset(clients_immatriculations, select=-nbPortes)
-clients_immatriculations <- subset(clients_immatriculations, select=-couleur)
-clients_immatriculations <- subset(clients_immatriculations, select=-occasion)
-clients_immatriculations <- subset(clients_immatriculations, select=-prix)
+# Suppression des colonnes liées à la voiture (autre que la catégorie)
+sauvegardeClientsImmatriculations <- clientsImmatriculations
 
-#--------------------------------#
-# APPRENTISSAGE DE L'ARBRE RPART #
-#--------------------------------#
-# Construction de l'arbre de decision
-tree <- rpart(categorie~., clients_immatriculations)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -immatriculation)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -marque)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -nom)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -puissance)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -longueur)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -nbPlaces)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -nbPortes)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -couleur)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -occasion)
+clientsImmatriculations <- subset(clientsImmatriculations, select = -prix)
 
-# Affichage de l'arbre par les fonctions de base de R
-plot(tree)
-text(tree, pretty = 0)
+## Random forests
+#---------------#
+# RANDOM FOREST #
+#---------------#
+randomForest <- randomForest(as.factor(catégorie) ~ ., data = clientsImmatriculations, proximity = FALSE)
+randomForestClass <- predict(randomForest, marketing, type = "response")
 
-#-------------------------------------------#
-# GENERATION DES PROBABILITES DE PREDICTION #
-#-------------------------------------------#
-# Generation de la classe prédite pour chaque exemple de test pour l'arbre 'tree1'
-test_tree <- predict(tree, marketing, type="class")
+randomForestProb <- predict(randomForest, marketing, type = "prob")
 
-# Generation des probabilites pour chaque exemple de test pour l'arbre 'tree1'
-prob_tree <- data.frame(predict(tree, marketing, type="prob"))
-
-marketing$categorie <- (colnames(prob_tree)[max.col(prob_tree)])
-
-# Enregistrement du fichier de resultats au format csv
-write.table(marketing, file="Marketing_prédit.csv", sep=",", dec=".", row.names = F)
+marketing$catégoriePréditeRandomForest <- (colnames(randomForestProb)[max.col(randomForestProb)])
+View(marketing)
