@@ -40,7 +40,7 @@ clientsImmatriculations <- subset(clientsImmatriculations, select = -prix)
 # APPRENTISSAGE DE L'ARBRE RPART #
 #--------------------------------#
 # Construction de l'arbre de decision
-tree <- rpart(catégorie ~ ., clientsImmatriculations)
+tree <- rpart(categorie ~ ., clientsImmatriculations)
 
 # Affichage de l'arbre par les fonctions de base de R
 plot(tree)
@@ -63,5 +63,5 @@ View(clientsImmatriculations)
 #---------------------------#
 # CALCUL DES TAUX DE SUCCES #
 #---------------------------#
-tauxSucces <- nrow(clientsImmatriculations[clientsImmatriculations$catégorie == clientsImmatriculations$catégoriePrédite, ]) / nrow(clientsImmatriculations)
+tauxSucces <- nrow(clientsImmatriculations[clientsImmatriculations$categorie == clientsImmatriculations$catégoriePrédite, ]) / nrow(clientsImmatriculations)
 View(tauxSucces)

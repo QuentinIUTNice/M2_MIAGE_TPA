@@ -1,6 +1,6 @@
 import dataJson from './catalogue.json' assert {type: 'json'};
 
-let categoryArray = [...new Set(dataJson.map(item => item.category))];
+let categoryArray = [...new Set(dataJson.map(item => item.categorie))];
 
 //For each item of categoryArray, create a new option in the select
 categoryArray.forEach(category => {
@@ -31,7 +31,7 @@ document.querySelector('#select').addEventListener('change', (event) => {
 });
 
 //Get objects from the data.json file where category is equal to the category selected
-let dataCategory = dataJson.filter(item => item.category === category);
+let dataCategory = dataJson.filter(item => item.categorie === category);
 let brandToShow = [...new Set(dataCategory.map(item => item.marque))];
 
 //Get the average price of each brand

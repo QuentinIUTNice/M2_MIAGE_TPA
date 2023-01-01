@@ -35,7 +35,7 @@ summary(catalogue)
 #---------------#
 # VISUALISATION #
 #---------------#
-modelesCategories <- catalogue %>% distinct(nom, catégorie)
+modelesCategories <- catalogue %>% distinct(nom, categorie)
 
 #------------------------------------------------------#
 # Enregistrement du fichier de resultats au format csv #
@@ -55,7 +55,7 @@ catalogue <- subset(catalogue, select = -occasion)
 #-----------------------------------------#
 # APPRENTISSAGE ARBRE DE DECISION 'rpart' #
 #-----------------------------------------#
-treeCatalogue <- rpart(catégorie ~ ., catalogue)
+treeCatalogue <- rpart(categorie ~ ., catalogue)
 
 plot(treeCatalogue)
 text(treeCatalogue, pretty = 0)
@@ -84,8 +84,8 @@ View(catalogue)
 #--------------------------#
 # CALCUL DU TAUX DE SUCCÈS #
 #--------------------------#
-tauxSucces <- nrow(catalogue[catalogue$catégorie == catalogue$catégoriePrédite, ]) / nrow(catalogue)
+tauxSucces <- nrow(catalogue[catalogue$categorie == catalogue$catégoriePrédite, ]) / nrow(catalogue)
 View(tauxSucces)
 
-echecs <- catalogue %>% filter(catalogue$catégorie != catalogue$catégoriePrédite)
+echecs <- catalogue %>% filter(catalogue$categorie != catalogue$catégoriePrédite)
 View(echecs)

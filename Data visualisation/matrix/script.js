@@ -12,121 +12,121 @@ let dataJson = [
         "marque": "Volvo",
         "nom": "S80 T6",
         "puissance": 272,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "blanc",
         "occasion": false,
         "prix": 50500,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Volvo",
         "nom": "S80 T6",
         "puissance": 272,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "noir",
         "occasion": false,
         "prix": 50500,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Volvo",
         "nom": "S80 T6",
         "puissance": 272,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "rouge",
         "occasion": false,
         "prix": 50500,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Volvo",
         "nom": "S80 T6",
         "puissance": 272,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "gris",
         "occasion": true,
         "prix": 35350,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Volvo",
         "nom": "S80 T6",
         "puissance": 272,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "bleu",
         "occasion": true,
         "prix": 35350,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Volvo",
         "nom": "S80 T6",
         "puissance": 272,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "gris",
         "occasion": false,
         "prix": 50500,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Volvo",
         "nom": "S80 T6",
         "puissance": 272,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "bleu",
         "occasion": false,
         "prix": 50500,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Volvo",
         "nom": "S80 T6",
         "puissance": 272,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "rouge",
         "occasion": true,
         "prix": 35350,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Volvo",
         "nom": "S80 T6",
         "puissance": 272,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "blanc",
         "occasion": true,
         "prix": 35350,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Volvo",
         "nom": "S80 T6",
         "puissance": 272,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "noir",
         "occasion": true,
         "prix": 35350,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Volkswagen",
@@ -378,7 +378,7 @@ let dataJson = [
         "couleur": "blanc",
         "occasion": true,
         "prix": 18641,
-        "categorie": "compacte"
+        "categorie": "coupé"
     },
     {
         "marque": "Volkswagen",
@@ -390,7 +390,7 @@ let dataJson = [
         "couleur": "noir",
         "occasion": true,
         "prix": 18641,
-        "categorie": "compacte"
+        "categorie": "coupé"
     },
     {
         "marque": "Volkswagen",
@@ -402,7 +402,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": true,
         "prix": 18641,
-        "categorie": "compacte"
+        "categorie": "coupé"
     },
     {
         "marque": "Volkswagen",
@@ -414,7 +414,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": true,
         "prix": 18641,
-        "categorie": "compacte"
+        "categorie": "coupé"
     },
     {
         "marque": "Volkswagen",
@@ -426,7 +426,7 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": true,
         "prix": 18641,
-        "categorie": "compacte"
+        "categorie": "coupé"
     },
     {
         "marque": "Volkswagen",
@@ -438,7 +438,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": false,
         "prix": 26630,
-        "categorie": "compacte"
+        "categorie": "coupé"
     },
     {
         "marque": "Volkswagen",
@@ -450,7 +450,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": false,
         "prix": 26630,
-        "categorie": "compacte"
+        "categorie": "coupé"
     },
     {
         "marque": "Volkswagen",
@@ -462,7 +462,7 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": false,
         "prix": 26630,
-        "categorie": "compacte"
+        "categorie": "coupé"
     },
     {
         "marque": "Volkswagen",
@@ -474,7 +474,7 @@ let dataJson = [
         "couleur": "blanc",
         "occasion": false,
         "prix": 26630,
-        "categorie": "compacte"
+        "categorie": "coupé"
     },
     {
         "marque": "Volkswagen",
@@ -486,6 +486,102 @@ let dataJson = [
         "couleur": "noir",
         "occasion": false,
         "prix": 26630,
+        "categorie": "coupé"
+    },
+    {
+        "marque": "Volkswagen",
+        "nom": "Golf 2.0 FSI",
+        "puissance": 150,
+        "longueur": "moyenne",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "rouge",
+        "occasion": true,
+        "prix": 16029,
+        "categorie": "compacte"
+    },
+    {
+        "marque": "Volkswagen",
+        "nom": "Golf 2.0 FSI",
+        "puissance": 150,
+        "longueur": "moyenne",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "gris",
+        "occasion": true,
+        "prix": 16029,
+        "categorie": "compacte"
+    },
+    {
+        "marque": "Volkswagen",
+        "nom": "Golf 2.0 FSI",
+        "puissance": 150,
+        "longueur": "moyenne",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "bleu",
+        "occasion": true,
+        "prix": 16029,
+        "categorie": "compacte"
+    },
+    {
+        "marque": "Volkswagen",
+        "nom": "Golf 2.0 FSI",
+        "puissance": 150,
+        "longueur": "moyenne",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "blanc",
+        "occasion": true,
+        "prix": 16029,
+        "categorie": "compacte"
+    },
+    {
+        "marque": "Volkswagen",
+        "nom": "Golf 2.0 FSI",
+        "puissance": 150,
+        "longueur": "moyenne",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "noir",
+        "occasion": true,
+        "prix": 16029,
+        "categorie": "compacte"
+    },
+    {
+        "marque": "Volkswagen",
+        "nom": "Golf 2.0 FSI",
+        "puissance": 150,
+        "longueur": "moyenne",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "blanc",
+        "occasion": false,
+        "prix": 22900,
+        "categorie": "compacte"
+    },
+    {
+        "marque": "Volkswagen",
+        "nom": "Golf 2.0 FSI",
+        "puissance": 150,
+        "longueur": "moyenne",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "noir",
+        "occasion": false,
+        "prix": 22900,
+        "categorie": "compacte"
+    },
+    {
+        "marque": "Volkswagen",
+        "nom": "Golf 2.0 FSI",
+        "puissance": 150,
+        "longueur": "moyenne",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "bleu",
+        "occasion": false,
+        "prix": 22900,
         "categorie": "compacte"
     },
     {
@@ -496,105 +592,9 @@ let dataJson = [
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "rouge",
-        "occasion": true,
-        "prix": 16029,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Volkswagen",
-        "nom": "Golf 2.0 FSI",
-        "puissance": 150,
-        "longueur": "moyenne",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "gris",
-        "occasion": true,
-        "prix": 16029,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Volkswagen",
-        "nom": "Golf 2.0 FSI",
-        "puissance": 150,
-        "longueur": "moyenne",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "bleu",
-        "occasion": true,
-        "prix": 16029,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Volkswagen",
-        "nom": "Golf 2.0 FSI",
-        "puissance": 150,
-        "longueur": "moyenne",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "blanc",
-        "occasion": true,
-        "prix": 16029,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Volkswagen",
-        "nom": "Golf 2.0 FSI",
-        "puissance": 150,
-        "longueur": "moyenne",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "noir",
-        "occasion": true,
-        "prix": 16029,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Volkswagen",
-        "nom": "Golf 2.0 FSI",
-        "puissance": 150,
-        "longueur": "moyenne",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "blanc",
         "occasion": false,
         "prix": 22900,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Volkswagen",
-        "nom": "Golf 2.0 FSI",
-        "puissance": 150,
-        "longueur": "moyenne",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "noir",
-        "occasion": false,
-        "prix": 22900,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Volkswagen",
-        "nom": "Golf 2.0 FSI",
-        "puissance": 150,
-        "longueur": "moyenne",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "bleu",
-        "occasion": false,
-        "prix": 22900,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Volkswagen",
-        "nom": "Golf 2.0 FSI",
-        "puissance": 150,
-        "longueur": "moyenne",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "rouge",
-        "occasion": false,
-        "prix": 22900,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "Volkswagen",
@@ -606,67 +606,67 @@ let dataJson = [
         "couleur": "gris",
         "occasion": false,
         "prix": 22900,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "Skoda",
         "nom": "Superb 2.8 V6",
         "puissance": 193,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "rouge",
         "occasion": false,
         "prix": 31790,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Skoda",
         "nom": "Superb 2.8 V6",
         "puissance": 193,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "gris",
         "occasion": false,
         "prix": 31790,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Skoda",
         "nom": "Superb 2.8 V6",
         "puissance": 193,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "bleu",
         "occasion": false,
         "prix": 31790,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Skoda",
         "nom": "Superb 2.8 V6",
         "puissance": 193,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "noir",
         "occasion": false,
         "prix": 31790,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Skoda",
         "nom": "Superb 2.8 V6",
         "puissance": 193,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "blanc",
         "occasion": false,
         "prix": 31790,
-        "categorie": "berline"
+        "categorie": "routière"
     },
     {
         "marque": "Seat",
@@ -678,7 +678,7 @@ let dataJson = [
         "couleur": "blanc",
         "occasion": false,
         "prix": 18880,
-        "categorie": "familiale"
+        "categorie": "compacte"
     },
     {
         "marque": "Seat",
@@ -690,7 +690,7 @@ let dataJson = [
         "couleur": "noir",
         "occasion": false,
         "prix": 18880,
-        "categorie": "familiale"
+        "categorie": "compacte"
     },
     {
         "marque": "Seat",
@@ -702,7 +702,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": false,
         "prix": 18880,
-        "categorie": "familiale"
+        "categorie": "compacte"
     },
     {
         "marque": "Seat",
@@ -714,7 +714,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": false,
         "prix": 18880,
-        "categorie": "familiale"
+        "categorie": "compacte"
     },
     {
         "marque": "Seat",
@@ -726,6 +726,114 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": false,
         "prix": 18880,
+        "categorie": "compacte"
+    },
+    {
+        "marque": "Saab",
+        "nom": "9.3 1.8T",
+        "puissance": 150,
+        "longueur": "longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "blanc",
+        "occasion": true,
+        "prix": 27020,
+        "categorie": "familiale"
+    },
+    {
+        "marque": "Saab",
+        "nom": "9.3 1.8T",
+        "puissance": 150,
+        "longueur": "longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "rouge",
+        "occasion": true,
+        "prix": 27020,
+        "categorie": "familiale"
+    },
+    {
+        "marque": "Saab",
+        "nom": "9.3 1.8T",
+        "puissance": 150,
+        "longueur": "longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "gris",
+        "occasion": true,
+        "prix": 27020,
+        "categorie": "familiale"
+    },
+    {
+        "marque": "Saab",
+        "nom": "9.3 1.8T",
+        "puissance": 150,
+        "longueur": "longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "bleu",
+        "occasion": true,
+        "prix": 27020,
+        "categorie": "familiale"
+    },
+    {
+        "marque": "Saab",
+        "nom": "9.3 1.8T",
+        "puissance": 150,
+        "longueur": "longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "noir",
+        "occasion": true,
+        "prix": 27020,
+        "categorie": "familiale"
+    },
+    {
+        "marque": "Saab",
+        "nom": "9.3 1.8T",
+        "puissance": 150,
+        "longueur": "longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "gris",
+        "occasion": false,
+        "prix": 38600,
+        "categorie": "familiale"
+    },
+    {
+        "marque": "Saab",
+        "nom": "9.3 1.8T",
+        "puissance": 150,
+        "longueur": "longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "bleu",
+        "occasion": false,
+        "prix": 38600,
+        "categorie": "familiale"
+    },
+    {
+        "marque": "Saab",
+        "nom": "9.3 1.8T",
+        "puissance": 150,
+        "longueur": "longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "noir",
+        "occasion": false,
+        "prix": 38600,
+        "categorie": "familiale"
+    },
+    {
+        "marque": "Saab",
+        "nom": "9.3 1.8T",
+        "puissance": 150,
+        "longueur": "longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "rouge",
+        "occasion": false,
+        "prix": 38600,
         "categorie": "familiale"
     },
     {
@@ -736,237 +844,129 @@ let dataJson = [
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "blanc",
-        "occasion": true,
-        "prix": 27020,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Saab",
-        "nom": "9.3 1.8T",
-        "puissance": 150,
-        "longueur": "longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "rouge",
-        "occasion": true,
-        "prix": 27020,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Saab",
-        "nom": "9.3 1.8T",
-        "puissance": 150,
-        "longueur": "longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "gris",
-        "occasion": true,
-        "prix": 27020,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Saab",
-        "nom": "9.3 1.8T",
-        "puissance": 150,
-        "longueur": "longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "bleu",
-        "occasion": true,
-        "prix": 27020,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Saab",
-        "nom": "9.3 1.8T",
-        "puissance": 150,
-        "longueur": "longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "noir",
-        "occasion": true,
-        "prix": 27020,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Saab",
-        "nom": "9.3 1.8T",
-        "puissance": 150,
-        "longueur": "longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "gris",
         "occasion": false,
         "prix": 38600,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Saab",
-        "nom": "9.3 1.8T",
-        "puissance": 150,
-        "longueur": "longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "bleu",
-        "occasion": false,
-        "prix": 38600,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Saab",
-        "nom": "9.3 1.8T",
-        "puissance": 150,
-        "longueur": "longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "noir",
-        "occasion": false,
-        "prix": 38600,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Saab",
-        "nom": "9.3 1.8T",
-        "puissance": 150,
-        "longueur": "longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "rouge",
-        "occasion": false,
-        "prix": 38600,
-        "categorie": "berline"
-    },
-    {
-        "marque": "Saab",
-        "nom": "9.3 1.8T",
-        "puissance": 150,
-        "longueur": "longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "blanc",
-        "occasion": false,
-        "prix": 38600,
-        "categorie": "berline"
+        "categorie": "familiale"
     },
     {
         "marque": "Renault",
         "nom": "Vel Satis 3.5 V6",
         "puissance": 245,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "gris",
         "occasion": true,
         "prix": 34440,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Renault",
         "nom": "Vel Satis 3.5 V6",
         "puissance": 245,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "noir",
         "occasion": true,
         "prix": 34440,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Renault",
         "nom": "Vel Satis 3.5 V6",
         "puissance": 245,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "bleu",
         "occasion": true,
         "prix": 34440,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Renault",
         "nom": "Vel Satis 3.5 V6",
         "puissance": 245,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "rouge",
         "occasion": true,
         "prix": 34440,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Renault",
         "nom": "Vel Satis 3.5 V6",
         "puissance": 245,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "blanc",
         "occasion": true,
         "prix": 34440,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Renault",
         "nom": "Vel Satis 3.5 V6",
         "puissance": 245,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "gris",
         "occasion": false,
         "prix": 49200,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Renault",
         "nom": "Vel Satis 3.5 V6",
         "puissance": 245,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "bleu",
         "occasion": false,
         "prix": 49200,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Renault",
         "nom": "Vel Satis 3.5 V6",
         "puissance": 245,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "blanc",
         "occasion": false,
         "prix": 49200,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Renault",
         "nom": "Vel Satis 3.5 V6",
         "puissance": 245,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "noir",
         "occasion": false,
         "prix": 49200,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Renault",
         "nom": "Vel Satis 3.5 V6",
         "puissance": 245,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "rouge",
         "occasion": false,
         "prix": 49200,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Renault",
@@ -978,7 +978,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": true,
         "prix": 15644,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "Renault",
@@ -990,7 +990,7 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": true,
         "prix": 15644,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "Renault",
@@ -1002,7 +1002,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": true,
         "prix": 15644,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "Renault",
@@ -1014,7 +1014,7 @@ let dataJson = [
         "couleur": "blanc",
         "occasion": true,
         "prix": 15644,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "Renault",
@@ -1026,7 +1026,7 @@ let dataJson = [
         "couleur": "noir",
         "occasion": true,
         "prix": 15644,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "Renault",
@@ -1038,7 +1038,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": false,
         "prix": 22350,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "Renault",
@@ -1050,7 +1050,7 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": false,
         "prix": 22350,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "Renault",
@@ -1062,7 +1062,7 @@ let dataJson = [
         "couleur": "blanc",
         "occasion": false,
         "prix": 22350,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "Renault",
@@ -1074,7 +1074,7 @@ let dataJson = [
         "couleur": "noir",
         "occasion": false,
         "prix": 22350,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "Renault",
@@ -1086,7 +1086,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": false,
         "prix": 22350,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "Renault",
@@ -1512,61 +1512,61 @@ let dataJson = [
         "marque": "Nissan",
         "nom": "Maxima 3.0 V6",
         "puissance": 200,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "noir",
         "occasion": false,
         "prix": 30000,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Nissan",
         "nom": "Maxima 3.0 V6",
         "puissance": 200,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "gris",
         "occasion": false,
         "prix": 30000,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Nissan",
         "nom": "Maxima 3.0 V6",
         "puissance": 200,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "bleu",
         "occasion": false,
         "prix": 30000,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Nissan",
         "nom": "Maxima 3.0 V6",
         "puissance": 200,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "rouge",
         "occasion": false,
         "prix": 30000,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Nissan",
         "nom": "Maxima 3.0 V6",
         "puissance": 200,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "blanc",
         "occasion": false,
         "prix": 30000,
-        "categorie": "routiere"
+        "categorie": "routière"
     },
     {
         "marque": "Nissan",
@@ -1638,7 +1638,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": true,
         "prix": 12740,
-        "categorie": "compacte"
+        "categorie": "citadine"
     },
     {
         "marque": "Mini",
@@ -1650,7 +1650,7 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": true,
         "prix": 12740,
-        "categorie": "compacte"
+        "categorie": "citadine"
     },
     {
         "marque": "Mini",
@@ -1662,7 +1662,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": true,
         "prix": 12740,
-        "categorie": "compacte"
+        "categorie": "citadine"
     },
     {
         "marque": "Mini",
@@ -1674,7 +1674,7 @@ let dataJson = [
         "couleur": "noir",
         "occasion": true,
         "prix": 12740,
-        "categorie": "compacte"
+        "categorie": "citadine"
     },
     {
         "marque": "Mini",
@@ -1686,7 +1686,7 @@ let dataJson = [
         "couleur": "blanc",
         "occasion": true,
         "prix": 12740,
-        "categorie": "compacte"
+        "categorie": "citadine"
     },
     {
         "marque": "Mini",
@@ -1698,7 +1698,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": false,
         "prix": 18200,
-        "categorie": "compacte"
+        "categorie": "citadine"
     },
     {
         "marque": "Mini",
@@ -1710,7 +1710,7 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": false,
         "prix": 18200,
-        "categorie": "compacte"
+        "categorie": "citadine"
     },
     {
         "marque": "Mini",
@@ -1722,7 +1722,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": false,
         "prix": 18200,
-        "categorie": "compacte"
+        "categorie": "citadine"
     },
     {
         "marque": "Mini",
@@ -1734,7 +1734,7 @@ let dataJson = [
         "couleur": "noir",
         "occasion": false,
         "prix": 18200,
-        "categorie": "compacte"
+        "categorie": "citadine"
     },
     {
         "marque": "Mini",
@@ -1746,150 +1746,126 @@ let dataJson = [
         "couleur": "blanc",
         "occasion": false,
         "prix": 18200,
-        "categorie": "compacte"
+        "categorie": "citadine"
     },
     {
         "marque": "Mercedes",
         "nom": "S500",
         "puissance": 306,
-        "longueur": "tres longue",
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "noir",
         "occasion": true,
         "prix": 70910,
-        "categorie": "limousine"
-    },
-    {
-        "marque": "Mercedes",
-        "nom": "S500",
-        "puissance": 306,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "bleu",
-        "occasion": true,
-        "prix": 70910,
-        "categorie": "limousine"
-    },
-    {
-        "marque": "Mercedes",
-        "nom": "S500",
-        "puissance": 306,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "rouge",
-        "occasion": true,
-        "prix": 70910,
-        "categorie": "limousine"
-    },
-    {
-        "marque": "Mercedes",
-        "nom": "S500",
-        "puissance": 306,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "blanc",
-        "occasion": true,
-        "prix": 70910,
-        "categorie": "limousine"
-    },
-    {
-        "marque": "Mercedes",
-        "nom": "S500",
-        "puissance": 306,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "bleu",
-        "occasion": false,
-        "prix": 101300,
-        "categorie": "limousine"
-    },
-    {
-        "marque": "Mercedes",
-        "nom": "S500",
-        "puissance": 306,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "gris",
-        "occasion": true,
-        "prix": 70910,
-        "categorie": "limousine"
-    },
-    {
-        "marque": "Mercedes",
-        "nom": "S500",
-        "puissance": 306,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "noir",
-        "occasion": false,
-        "prix": 101300,
-        "categorie": "limousine"
-    },
-    {
-        "marque": "Mercedes",
-        "nom": "S500",
-        "puissance": 306,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "blanc",
-        "occasion": false,
-        "prix": 101300,
-        "categorie": "limousine"
-    },
-    {
-        "marque": "Mercedes",
-        "nom": "S500",
-        "puissance": 306,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "rouge",
-        "occasion": false,
-        "prix": 101300,
-        "categorie": "limousine"
-    },
-    {
-        "marque": "Mercedes",
-        "nom": "S500",
-        "puissance": 306,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "gris",
-        "occasion": false,
-        "prix": 101300,
-        "categorie": "limousine"
-    },
-    {
-        "marque": "Mercedes",
-        "nom": "A200",
-        "puissance": 136,
-        "longueur": "moyenne",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "blanc",
-        "occasion": false,
-        "prix": 25900,
         "categorie": "berline"
     },
     {
         "marque": "Mercedes",
-        "nom": "A200",
-        "puissance": 136,
-        "longueur": "moyenne",
+        "nom": "S500",
+        "puissance": 306,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "bleu",
+        "occasion": true,
+        "prix": 70910,
+        "categorie": "berline"
+    },
+    {
+        "marque": "Mercedes",
+        "nom": "S500",
+        "puissance": 306,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "rouge",
+        "occasion": true,
+        "prix": 70910,
+        "categorie": "berline"
+    },
+    {
+        "marque": "Mercedes",
+        "nom": "S500",
+        "puissance": 306,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "blanc",
+        "occasion": true,
+        "prix": 70910,
+        "categorie": "berline"
+    },
+    {
+        "marque": "Mercedes",
+        "nom": "S500",
+        "puissance": 306,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "bleu",
+        "occasion": false,
+        "prix": 101300,
+        "categorie": "berline"
+    },
+    {
+        "marque": "Mercedes",
+        "nom": "S500",
+        "puissance": 306,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "gris",
+        "occasion": true,
+        "prix": 70910,
+        "categorie": "berline"
+    },
+    {
+        "marque": "Mercedes",
+        "nom": "S500",
+        "puissance": 306,
+        "longueur": "très longue",
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "noir",
         "occasion": false,
-        "prix": 25900,
+        "prix": 101300,
+        "categorie": "berline"
+    },
+    {
+        "marque": "Mercedes",
+        "nom": "S500",
+        "puissance": 306,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "blanc",
+        "occasion": false,
+        "prix": 101300,
+        "categorie": "berline"
+    },
+    {
+        "marque": "Mercedes",
+        "nom": "S500",
+        "puissance": 306,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "rouge",
+        "occasion": false,
+        "prix": 101300,
+        "categorie": "berline"
+    },
+    {
+        "marque": "Mercedes",
+        "nom": "S500",
+        "puissance": 306,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "gris",
+        "occasion": false,
+        "prix": 101300,
         "categorie": "berline"
     },
     {
@@ -1900,9 +1876,33 @@ let dataJson = [
         "nbPlaces": 5,
         "nbPortes": 5,
         "couleur": "blanc",
+        "occasion": false,
+        "prix": 25900,
+        "categorie": "polyvalente"
+    },
+    {
+        "marque": "Mercedes",
+        "nom": "A200",
+        "puissance": 136,
+        "longueur": "moyenne",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "noir",
+        "occasion": false,
+        "prix": 25900,
+        "categorie": "polyvalente"
+    },
+    {
+        "marque": "Mercedes",
+        "nom": "A200",
+        "puissance": 136,
+        "longueur": "moyenne",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "blanc",
         "occasion": true,
         "prix": 18130,
-        "categorie": "berline"
+        "categorie": "polyvalente"
     },
     {
         "marque": "Mercedes",
@@ -1914,7 +1914,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": true,
         "prix": 18130,
-        "categorie": "berline"
+        "categorie": "polyvalente"
     },
     {
         "marque": "Mercedes",
@@ -1926,7 +1926,7 @@ let dataJson = [
         "couleur": "noir",
         "occasion": true,
         "prix": 18130,
-        "categorie": "berline"
+        "categorie": "polyvalente"
     },
     {
         "marque": "Mercedes",
@@ -1938,7 +1938,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": false,
         "prix": 25900,
-        "categorie": "berline"
+        "categorie": "polyvalente"
     },
     {
         "marque": "Mercedes",
@@ -1950,7 +1950,7 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": true,
         "prix": 18130,
-        "categorie": "berline"
+        "categorie": "polyvalente"
     },
     {
         "marque": "Mercedes",
@@ -1962,7 +1962,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": true,
         "prix": 18130,
-        "categorie": "berline"
+        "categorie": "polyvalente"
     },
     {
         "marque": "Mercedes",
@@ -1974,7 +1974,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": false,
         "prix": 25900,
-        "categorie": "berline"
+        "categorie": "polyvalente"
     },
     {
         "marque": "Mercedes",
@@ -1986,7 +1986,7 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": false,
         "prix": 25900,
-        "categorie": "berline"
+        "categorie": "polyvalente"
     },
     {
         "marque": "Lancia",
@@ -2418,7 +2418,7 @@ let dataJson = [
         "couleur": "blanc",
         "occasion": true,
         "prix": 16730,
-        "categorie": "berline"
+        "categorie": "familiale"
     },
     {
         "marque": "Ford",
@@ -2430,7 +2430,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": true,
         "prix": 16730,
-        "categorie": "berline"
+        "categorie": "familiale"
     },
     {
         "marque": "Ford",
@@ -2442,7 +2442,7 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": true,
         "prix": 16730,
-        "categorie": "berline"
+        "categorie": "familiale"
     },
     {
         "marque": "Ford",
@@ -2454,7 +2454,7 @@ let dataJson = [
         "couleur": "noir",
         "occasion": true,
         "prix": 16730,
-        "categorie": "berline"
+        "categorie": "familiale"
     },
     {
         "marque": "Ford",
@@ -2466,7 +2466,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": true,
         "prix": 16730,
-        "categorie": "berline"
+        "categorie": "familiale"
     },
     {
         "marque": "Ford",
@@ -2478,7 +2478,7 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": false,
         "prix": 23900,
-        "categorie": "berline"
+        "categorie": "familiale"
     },
     {
         "marque": "Ford",
@@ -2490,7 +2490,7 @@ let dataJson = [
         "couleur": "blanc",
         "occasion": false,
         "prix": 23900,
-        "categorie": "berline"
+        "categorie": "familiale"
     },
     {
         "marque": "Ford",
@@ -2502,7 +2502,7 @@ let dataJson = [
         "couleur": "noir",
         "occasion": false,
         "prix": 23900,
-        "categorie": "berline"
+        "categorie": "familiale"
     },
     {
         "marque": "Ford",
@@ -2514,7 +2514,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": false,
         "prix": 23900,
-        "categorie": "berline"
+        "categorie": "familiale"
     },
     {
         "marque": "Ford",
@@ -2526,7 +2526,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": false,
         "prix": 23900,
-        "categorie": "berline"
+        "categorie": "familiale"
     },
     {
         "marque": "Fiat",
@@ -2718,7 +2718,7 @@ let dataJson = [
         "couleur": "blanc",
         "occasion": false,
         "prix": 7500,
-        "categorie": "compacte"
+        "categorie": "polyvalente"
     },
     {
         "marque": "Dacia",
@@ -2730,7 +2730,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": false,
         "prix": 7500,
-        "categorie": "compacte"
+        "categorie": "polyvalente"
     },
     {
         "marque": "Dacia",
@@ -2742,7 +2742,7 @@ let dataJson = [
         "couleur": "noir",
         "occasion": false,
         "prix": 7500,
-        "categorie": "compacte"
+        "categorie": "polyvalente"
     },
     {
         "marque": "Dacia",
@@ -2754,7 +2754,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": false,
         "prix": 7500,
-        "categorie": "compacte"
+        "categorie": "polyvalente"
     },
     {
         "marque": "Dacia",
@@ -2766,142 +2766,142 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": false,
         "prix": 7500,
+        "categorie": "polyvalente"
+    },
+    {
+        "marque": "BMW",
+        "nom": "M5",
+        "puissance": 507,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "bleu",
+        "occasion": true,
+        "prix": 66360,
+        "categorie": "routière"
+    },
+    {
+        "marque": "BMW",
+        "nom": "M5",
+        "puissance": 507,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "gris",
+        "occasion": false,
+        "prix": 94800,
+        "categorie": "routière"
+    },
+    {
+        "marque": "BMW",
+        "nom": "M5",
+        "puissance": 507,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "blanc",
+        "occasion": false,
+        "prix": 94800,
+        "categorie": "routière"
+    },
+    {
+        "marque": "BMW",
+        "nom": "M5",
+        "puissance": 507,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "noir",
+        "occasion": false,
+        "prix": 94800,
+        "categorie": "routière"
+    },
+    {
+        "marque": "BMW",
+        "nom": "M5",
+        "puissance": 507,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "rouge",
+        "occasion": true,
+        "prix": 66360,
+        "categorie": "routière"
+    },
+    {
+        "marque": "BMW",
+        "nom": "M5",
+        "puissance": 507,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "blanc",
+        "occasion": true,
+        "prix": 66360,
+        "categorie": "routière"
+    },
+    {
+        "marque": "BMW",
+        "nom": "M5",
+        "puissance": 507,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "bleu",
+        "occasion": false,
+        "prix": 94800,
+        "categorie": "routière"
+    },
+    {
+        "marque": "BMW",
+        "nom": "M5",
+        "puissance": 507,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "gris",
+        "occasion": true,
+        "prix": 66360,
+        "categorie": "routière"
+    },
+    {
+        "marque": "BMW",
+        "nom": "M5",
+        "puissance": 507,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "rouge",
+        "occasion": false,
+        "prix": 94800,
+        "categorie": "routière"
+    },
+    {
+        "marque": "BMW",
+        "nom": "M5",
+        "puissance": 507,
+        "longueur": "très longue",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "noir",
+        "occasion": true,
+        "prix": 66360,
+        "categorie": "routière"
+    },
+    {
+        "marque": "BMW",
+        "nom": "120i",
+        "puissance": 150,
+        "longueur": "moyenne",
+        "nbPlaces": 5,
+        "nbPortes": 5,
+        "couleur": "rouge",
+        "occasion": true,
+        "prix": 25060,
         "categorie": "compacte"
     },
     {
         "marque": "BMW",
-        "nom": "M5",
-        "puissance": 507,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "bleu",
-        "occasion": true,
-        "prix": 66360,
-        "categorie": "grand tourisme"
-    },
-    {
-        "marque": "BMW",
-        "nom": "M5",
-        "puissance": 507,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "gris",
-        "occasion": false,
-        "prix": 94800,
-        "categorie": "grand tourisme"
-    },
-    {
-        "marque": "BMW",
-        "nom": "M5",
-        "puissance": 507,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "blanc",
-        "occasion": false,
-        "prix": 94800,
-        "categorie": "grand tourisme"
-    },
-    {
-        "marque": "BMW",
-        "nom": "M5",
-        "puissance": 507,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "noir",
-        "occasion": false,
-        "prix": 94800,
-        "categorie": "grand tourisme"
-    },
-    {
-        "marque": "BMW",
-        "nom": "M5",
-        "puissance": 507,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "rouge",
-        "occasion": true,
-        "prix": 66360,
-        "categorie": "grand tourisme"
-    },
-    {
-        "marque": "BMW",
-        "nom": "M5",
-        "puissance": 507,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "blanc",
-        "occasion": true,
-        "prix": 66360,
-        "categorie": "grand tourisme"
-    },
-    {
-        "marque": "BMW",
-        "nom": "M5",
-        "puissance": 507,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "bleu",
-        "occasion": false,
-        "prix": 94800,
-        "categorie": "grand tourisme"
-    },
-    {
-        "marque": "BMW",
-        "nom": "M5",
-        "puissance": 507,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "gris",
-        "occasion": true,
-        "prix": 66360,
-        "categorie": "grand tourisme"
-    },
-    {
-        "marque": "BMW",
-        "nom": "M5",
-        "puissance": 507,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "rouge",
-        "occasion": false,
-        "prix": 94800,
-        "categorie": "grand tourisme"
-    },
-    {
-        "marque": "BMW",
-        "nom": "M5",
-        "puissance": 507,
-        "longueur": "tres longue",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "noir",
-        "occasion": true,
-        "prix": 66360,
-        "categorie": "grand tourisme"
-    },
-    {
-        "marque": "BMW",
-        "nom": "120i",
-        "puissance": 150,
-        "longueur": "moyenne",
-        "nbPlaces": 5,
-        "nbPortes": 5,
-        "couleur": "rouge",
-        "occasion": true,
-        "prix": 25060,
-        "categorie": "berline"
-    },
-    {
-        "marque": "BMW",
         "nom": "120i",
         "puissance": 150,
         "longueur": "moyenne",
@@ -2910,7 +2910,7 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": false,
         "prix": 35800,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "BMW",
@@ -2922,7 +2922,7 @@ let dataJson = [
         "couleur": "blanc",
         "occasion": false,
         "prix": 35800,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "BMW",
@@ -2934,7 +2934,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": false,
         "prix": 35800,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "BMW",
@@ -2946,7 +2946,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": false,
         "prix": 35800,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "BMW",
@@ -2958,7 +2958,7 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": true,
         "prix": 25060,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "BMW",
@@ -2970,7 +2970,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": true,
         "prix": 25060,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "BMW",
@@ -2982,7 +2982,7 @@ let dataJson = [
         "couleur": "noir",
         "occasion": true,
         "prix": 25060,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "BMW",
@@ -2994,7 +2994,7 @@ let dataJson = [
         "couleur": "blanc",
         "occasion": true,
         "prix": 25060,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "BMW",
@@ -3006,7 +3006,7 @@ let dataJson = [
         "couleur": "noir",
         "occasion": false,
         "prix": 35800,
-        "categorie": "berline"
+        "categorie": "compacte"
     },
     {
         "marque": "Audi",
@@ -3138,7 +3138,7 @@ let dataJson = [
         "couleur": "noir",
         "occasion": true,
         "prix": 12817,
-        "categorie": "citadine"
+        "categorie": "minispace"
     },
     {
         "marque": "Audi",
@@ -3150,7 +3150,7 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": false,
         "prix": 18310,
-        "categorie": "citadine"
+        "categorie": "minispace"
     },
     {
         "marque": "Audi",
@@ -3162,7 +3162,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": false,
         "prix": 18310,
-        "categorie": "citadine"
+        "categorie": "minispace"
     },
     {
         "marque": "Audi",
@@ -3174,7 +3174,7 @@ let dataJson = [
         "couleur": "bleu",
         "occasion": true,
         "prix": 12817,
-        "categorie": "citadine"
+        "categorie": "minispace"
     },
     {
         "marque": "Audi",
@@ -3186,7 +3186,7 @@ let dataJson = [
         "couleur": "gris",
         "occasion": true,
         "prix": 12817,
-        "categorie": "citadine"
+        "categorie": "minispace"
     },
     {
         "marque": "Audi",
@@ -3198,7 +3198,7 @@ let dataJson = [
         "couleur": "noir",
         "occasion": false,
         "prix": 18310,
-        "categorie": "citadine"
+        "categorie": "minispace"
     },
     {
         "marque": "Audi",
@@ -3210,7 +3210,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": false,
         "prix": 18310,
-        "categorie": "citadine"
+        "categorie": "minispace"
     },
     {
         "marque": "Audi",
@@ -3222,7 +3222,7 @@ let dataJson = [
         "couleur": "blanc",
         "occasion": true,
         "prix": 12817,
-        "categorie": "citadine"
+        "categorie": "minispace"
     },
     {
         "marque": "Audi",
@@ -3234,7 +3234,7 @@ let dataJson = [
         "couleur": "rouge",
         "occasion": true,
         "prix": 12817,
-        "categorie": "citadine"
+        "categorie": "minispace"
     },
     {
         "marque": "Audi",
@@ -3246,7 +3246,7 @@ let dataJson = [
         "couleur": "blanc",
         "occasion": false,
         "prix": 18310,
-        "categorie": "citadine"
+        "categorie": "minispace"
     }
 ]
 

@@ -50,10 +50,10 @@ test <- clientsImmatriculations[ind == 2, ]
 #---------------#
 # RANDOM FOREST #
 #---------------#
-randomForest <- randomForest(as.factor(catégorie) ~ ., data = train, proximity = FALSE)
+randomForest <- randomForest(as.factor(categorie) ~ ., data = train, proximity = FALSE)
 randomForestClass <- predict(randomForest, test, type = "response")
 
-print(table(test$catégorie, randomForestClass))
+print(table(test$categorie, randomForestClass))
 
 randomForestProb <- predict(randomForest, test, type = "prob")
 
@@ -62,11 +62,11 @@ test$catégoriePrédite <- (colnames(randomForestProb)[max.col(randomForestProb)
 #---------------------------#
 # CALCUL DES TAUX DE SUCCES #
 #---------------------------#
-taux_succes <- nrow(test[test$catégorie == test$catégoriePrédite, ]) / nrow(test)
+taux_succes <- nrow(test[test$categorie == test$catégoriePrédite, ]) / nrow(test)
 taux_succes
 
 #----------------------#
 # MATRICE DE CONFUSION #
 #----------------------#
 prediction <- predict(randomForest, test)
-confusionMatrix(prediction, as.factor(test$catégorie))
+confusionMatrix(prediction, as.factor(test$categorie))

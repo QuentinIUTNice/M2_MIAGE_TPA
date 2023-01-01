@@ -47,26 +47,26 @@ test <- clientsImmatriculations[ind == 2, ]
 #---------------------#
 # K-NEAREST NEIGHBORS #
 #---------------------#
-knn <- kknn(as.factor(catégorie) ~ ., train, test, k = 10, distance = 1)
+knn <- kknn(as.factor(categorie) ~ ., train, test, k = 10, distance = 1)
 knnProb <- data.frame(predict(knn, test, type = "prob"))
 test$catégoriePrédite1 <- (colnames(knnProb)[max.col(knnProb)])
 
-knn <- kknn(as.factor(catégorie) ~ ., train, test, k = 10, distance = 2)
+knn <- kknn(as.factor(categorie) ~ ., train, test, k = 10, distance = 2)
 knnProb <- data.frame(predict(knn, test, type = "prob"))
 test$catégoriePrédite2 <- (colnames(knnProb)[max.col(knnProb)])
 
-knn <- kknn(as.factor(catégorie) ~ ., train, test, k = 20, distance = 1)
+knn <- kknn(as.factor(categorie) ~ ., train, test, k = 20, distance = 1)
 knnProb <- data.frame(predict(knn, test, type = "prob"))
 test$catégoriePrédite3 <- (colnames(knnProb)[max.col(knnProb)])
 
-knn <- kknn(as.factor(catégorie) ~ ., train, test, k = 20, distance = 2)
+knn <- kknn(as.factor(categorie) ~ ., train, test, k = 20, distance = 2)
 knnProb <- data.frame(predict(knn, test, type = "prob"))
 test$catégoriePrédite4 <- (colnames(knnProb)[max.col(knnProb)])
 
 #---------------------------#
 # CALCUL DES TAUX DE SUCCES #
 #---------------------------#
-tauxSucces1 <- nrow(test[test$catégorie == test$catégoriePrédite1, ]) / nrow(test)
-tauxSucces2 <- nrow(test[test$catégorie == test$catégoriePrédite2, ]) / nrow(test)
-tauxSucces3 <- nrow(test[test$catégorie == test$catégoriePrédite3, ]) / nrow(test)
-tauxSucces4 <- nrow(test[test$catégorie == test$catégoriePrédite4, ]) / nrow(test)
+tauxSucces1 <- nrow(test[test$categorie == test$catégoriePrédite1, ]) / nrow(test)
+tauxSucces2 <- nrow(test[test$categorie == test$catégoriePrédite2, ]) / nrow(test)
+tauxSucces3 <- nrow(test[test$categorie == test$catégoriePrédite3, ]) / nrow(test)
+tauxSucces4 <- nrow(test[test$categorie == test$catégoriePrédite4, ]) / nrow(test)
