@@ -41,7 +41,7 @@ catalogue <- subset(catalogue, select = -occasion)
 #-----------------------------------------#
 # APPRENTISSAGE ARBRE DE DECISION 'rpart' #
 #-----------------------------------------#
-treeCatalogue <- rpart(catégorie ~ ., catalogue)
+treeCatalogue <- rpart(categorie ~ ., catalogue)
 
 plot(treeCatalogue)
 text(treeCatalogue, pretty = 0)
@@ -71,7 +71,7 @@ probTreeImmatriculations <- data.frame(predict(treeCatalogue, immatriculations, 
 # ENREGISTREMENT DES PRÉDICTIONS  #
 #---------------------------------#
 # Ajout d'une colonne categorie aux données de immatriculations
-immatriculations$catégorie <- (colnames(probTreeImmatriculations)[max.col(probTreeImmatriculations)])
+immatriculations$categorie <- (colnames(probTreeImmatriculations)[max.col(probTreeImmatriculations)])
 View(immatriculations)
 
 # Enregistrement du fichier de resultats au format csv
