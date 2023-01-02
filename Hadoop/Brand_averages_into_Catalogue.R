@@ -12,12 +12,11 @@ Catalogue[ , empty_cols] <- NA
 for(i in 1:nrow(Catalogue)) {
   #Get row
   row <- Catalogue[i,]
-  print(row)
-  print(averages_per_brand$"Moyenne cout energie"[averages_per_brand$"Marque"==toupper(row[1])])
+
   #Add value from averages_per_brand file to the good column id field
-  row[12] <- averages_per_brand$"Moyenne cout energie"[averages_per_brand$"Marque"==toupper(row[1])]
-  row[13] <- averages_per_brand$"Moyenne rejet CO2"[averages_per_brand$"Marque"==toupper(row[1])]
-  row[14] <- averages_per_brand$"Moyenne Bonus Malus"[averages_per_brand$"Marque"==toupper(row[1])]
+  row[11] <- averages_per_brand$"Moyenne cout energie"[averages_per_brand$"Marque"==toupper(row[1])]
+  row[12] <- averages_per_brand$"Moyenne rejet CO2"[averages_per_brand$"Marque"==toupper(row[1])]
+  row[13] <- averages_per_brand$"Moyenne Bonus Malus"[averages_per_brand$"Marque"==toupper(row[1])]
   
   #Replace modified row into Catalogue dataframe
   Catalogue[i,] <- row
