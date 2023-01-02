@@ -27,7 +27,7 @@ clientsImmatriculations <- read.csv(
 )
 marketing <- read.csv(
     dec = ".",
-    file = "Marketing.csv",
+    file = "oMarketing.csv",
     header = TRUE,
     sep = ",",
     stringsAsFactors = FALSE,
@@ -52,10 +52,13 @@ clientsImmatriculations <- subset(clientsImmatriculations, select = -prix)
 #---------------#
 # RANDOM FOREST #
 #---------------#
-randomForest <- randomForest(as.factor(catégorie) ~ ., data = clientsImmatriculations, proximity = FALSE)
+randomForest <- randomForest(as.factor(categorie) ~ ., data = clientsImmatriculations, proximity = FALSE)
 randomForestClass <- predict(randomForest, marketing, type = "response")
 
 randomForestProb <- predict(randomForest, marketing, type = "prob")
 
 marketing$catégoriePréditeRandomForest <- (colnames(randomForestProb)[max.col(randomForestProb)])
 View(marketing)
+
+# Enregistrement du fichier de resultats au format csv
+write.table(marketing, file = "Marketing.csv", sep = ",", dec = ".", row.names = F)

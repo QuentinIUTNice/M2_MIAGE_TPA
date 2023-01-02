@@ -1,4 +1,4 @@
-marque,nom,puissance,longueur,nbPlaces,nbPortes,couleur,occasion,prix,catégorie
+marque,nom,puissance,longueur,nbPlaces,nbPortes,couleur,occasion,prix,categorie
 Volvo,S80 T6,272,très longue,5,5,blanc,false,50500,routière
 Volvo,S80 T6,272,très longue,5,5,noir,false,50500,routière
 Volvo,S80 T6,272,très longue,5,5,rouge,false,50500,routière

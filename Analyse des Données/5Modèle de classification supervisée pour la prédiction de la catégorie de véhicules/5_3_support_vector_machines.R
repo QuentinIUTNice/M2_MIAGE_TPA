@@ -49,10 +49,10 @@ test <- clientsImmatriculations[ind == 2, ]
 #-------------------------#
 # SUPPORT VECTOR MACHINES #
 #-------------------------#
-svmLinear <- svm(as.factor(catégorie) ~ ., train, probability = TRUE, kernel = "linear")
-svmPolynomial <- svm(as.factor(catégorie) ~ ., train, probability = TRUE, kernel = "polynomial")
-svmRadial <- svm(as.factor(catégorie) ~ ., train, probability = TRUE, kernel = "radial")
-svmSigmoid <- svm(as.factor(catégorie) ~ ., train, probability = TRUE, kernel = "sigmoid")
+svmLinear <- svm(as.factor(categorie) ~ ., train, probability = TRUE, kernel = "linear")
+svmPolynomial <- svm(as.factor(categorie) ~ ., train, probability = TRUE, kernel = "polynomial")
+svmRadial <- svm(as.factor(categorie) ~ ., train, probability = TRUE, kernel = "radial")
+svmSigmoid <- svm(as.factor(categorie) ~ ., train, probability = TRUE, kernel = "sigmoid")
 
 # Test du classifeur : classe predite
 svmLinearClass <- predict(svmLinear, test, type = "response")
@@ -61,10 +61,10 @@ svmRadialClass <- predict(svmRadial, test, type = "response")
 svmSigmoidClass <- predict(svmSigmoid, test, type = "response")
 
 # Matrice de confusion
-print(table(test$catégorie, svmLinearClass))
-print(table(test$catégorie, svmPolynomialClass))
-print(table(test$catégorie, svmRadialClass))
-print(table(test$catégorie, svmSigmoidClass))
+print(table(test$categorie, svmLinearClass))
+print(table(test$categorie, svmPolynomialClass))
+print(table(test$categorie, svmRadialClass))
+print(table(test$categorie, svmSigmoidClass))
 
 # Test du classifeur : probabilites pour chaque prediction
 svmLinearProb <- predict(svmLinear, test, probability = TRUE)
@@ -86,13 +86,13 @@ test$catégoriePréditeSigmoid <- (colnames(svmSigmoidProb)[max.col(svmSigmoidPr
 #---------------------------#
 # CALCUL DES TAUX DE SUCCES #
 #---------------------------#
-tauxSuccesLinear <- nrow(test[test$catégorie == test$catégoriePréditeLinear, ]) / nrow(test)
-tauxSuccesPolynomial <- nrow(test[test$catégorie == test$catégoriePréditePolynomial, ]) / nrow(test)
-tauxSuccesRadial <- nrow(test[test$catégorie == test$catégoriePréditeRadial, ]) / nrow(test)
-tauxSuccesSigmoid <- nrow(test[test$catégorie == test$catégoriePréditeSigmoid, ]) / nrow(test)
+tauxSuccesLinear <- nrow(test[test$categorie == test$catégoriePréditeLinear, ]) / nrow(test)
+tauxSuccesPolynomial <- nrow(test[test$categorie == test$catégoriePréditePolynomial, ]) / nrow(test)
+tauxSuccesRadial <- nrow(test[test$categorie == test$catégoriePréditeRadial, ]) / nrow(test)
+tauxSuccesSigmoid <- nrow(test[test$categorie == test$catégoriePréditeSigmoid, ]) / nrow(test)
 
 #----------------------#
 # MATRICE DE CONFUSION #
 #----------------------#
 prediction <- predict(svmRadial, test)
-confusionMatrix(prediction, as.factor(test$catégorie))
+confusionMatrix(prediction, as.factor(test$categorie))
