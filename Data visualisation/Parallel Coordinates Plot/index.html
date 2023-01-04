@@ -55,6 +55,15 @@
     };
     var dimensions = [
         {
+            key: "marque",
+            description: "marque",
+            type: types["String"],
+            axis: d3.axisLeft()
+                .tickFormat(function (d, i) {
+                    return d;
+                })
+        },
+        {
             key: "puissance",
             description: "puissance",
             type: types["Number"]
