@@ -67,11 +67,10 @@ import java.util.List;
         tpa.getMarketingByKey(1);*/
 
 
-		tpa.getCO2Rows();
+		
 		tpa.getImmatriculationRows();
 		tpa.getClientRows();
-        tpa.getCatalogueRows();
-        tpa.getMarketingRows();
+    
 
 
         } catch (RuntimeException e) {
