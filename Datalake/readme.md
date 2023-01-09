@@ -1,6 +1,6 @@
  
 # ARCHITECTURE OF OUR PROJET
- Afin de traite ces données de quantité massive, nons avons choisi de les répartir sur ces trois sources données complétement indépendantes notamment:
+ Afin de traiter ces données de quantité massive, nons avons choisi de les répartir sur ces trois sources données complétement indépendantes notamment:
  
 - **Oracle NoSQL**:contient les tables **clients** et **immatriculations**
 - **MongoDB**: contient la table **catalogue**
@@ -48,28 +48,21 @@ Pour placer les données clients et immatriculations dans le serveur Oracle NOSQ
 
  ``` java -Xmx64m -Xms64m -jar $KVHOME/lib/sql.jar -helper-hosts localhost:5000 -store kvstore ```
 
- ``` select * from co2; ```
+
 
  ``` select * from clients; ```
 
- ```select * from catalogue; ```
 
  ```select * from immatriculations; ```
 
- ``` select * from marketing; ```
+
 
  **Start hive:**
- ```bash 
- nohup hive --service metastore > /dev/null &
- ```
-
-```bash 
+```bash
+nohup hive --service metastore > /dev/null &
 nohup hiveserver2 > /dev/null &
+beeline -u jdbc:hive2://localhost:10000 vagrant
 ```
-
- ```bash 
- beeline -u jdbc:hive2://localhost:10000 vagrant
- ```
 **Query KVStore from Hive**
 
 **_External table CLIENT_**
@@ -121,7 +114,8 @@ TBLPROPERTIES (
 
   ```bash
   SELECT * FROM CLIENT_EXT;
-  SELECT * FROM IMMATRICULATION_EXT;```
+  SELECT * FROM IMMATRICULATION_EXT;
+  ```
 
 # Data source_2: Mongo
 **Importing the data into mongo**
@@ -129,7 +123,8 @@ TBLPROPERTIES (
 ```bash
 vagrant ssh
 cd /vagrant
- mongoimport -d mbds_22 -c catalogue --type csv --file Catalogue.csv --headerline```
+ mongoimport -d mbds_22 -c catalogue --type csv --file Catalogue.csv --headerline
+ ```
 
  **Check if the data has been imported successfully**
  ```bash
